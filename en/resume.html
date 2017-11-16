@@ -1,0 +1,747 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Resume | Ryan Creative</title>
+<link rel="shortcut icon" href="../faviconr.ico" type="image/x-icon" />
+<!--[if lte IE 9]>
+<link rel="stylesheet" type="text/css" href="../css/ie.css" />
+<![endif]-->
+<style type="text/css">
+/*全局*/
+body {margin:0; padding:0; background:url(../img/faq_bg.png) repeat;  min-width:1210px;}
+a:link {color:#202020; text-decoration:none;}
+a:hover {color:gray; text-decoration:none;}
+a:visited {color:#202020;}
+::selection {background:#fe57a1; color:#fff; text-shadow:none;}
+/*字体*/
+@font-face {
+	font-family: 'venera3';
+	src: url('../fonts/venera3-webfont.eot');
+	src: url('../fonts/venera3-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/venera3-webfont.woff') format('woff'),
+		 url('../fonts/venera3-webfont.ttf') format('truetype'),
+		 url('../fonts/venera3-webfont.svg#FVGranadaRegular') format('svg');
+}
+@font-face {
+	font-family: 'barkentina1';
+	src: url('../fonts/barkentina1-webfont.eot');
+	src: url('../fonts/barkentina1-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/barkentina1-webfont.woff') format('woff'),
+		 url('../fonts/barkentina1-webfont.ttf') format('truetype'),
+		 url('../fonts/barkentina1-webfont.svg#FVGranadaRegular') format('svg');
+}
+/*导航*/
+#nav {margin:0; padding:0; width:100%; height:100px; background:#212226 url(../img/nav_bg.jpg) repeat; overflow:hidden;}
+#nav ul {width:1200px; margin:0 auto; font-family:'venera3',微软雅黑; font-size:16px; letter-spacing:0.1em; list-style-type:none;}
+#nav li {float:right; background:#212226 url(../img/nav_bg.jpg);}
+#nav li p {color:#FFF; text-align:center; line-height:18px; font-size:12px; margin-top:-30px;}
+#nav li a{color:#FFF; text-align:center; line-height:100px; padding:40px 20px 40px 20px; text-decoration:none;}
+#nav li a:hover {color:#FFF; background-color:#F25C27; text-decoration:none;}
+/*菜单*/
+#header {width:100%; height:40px; background-color:#212226; border-top:1px solid #28292E; border-bottom:1px solid #28292E; overflow:hidden; z-index:999; -webkit-box-shadow:1px 1px 3px #666; -moz-box-shadow:1px 1px 3px #666;}
+#header ul {width:1200px; margin:0 auto; font-family:微软雅黑; font-size:15px; list-style-type:none; letter-spacing:0.1em;}
+#header li {float:left; background-color:#212226;}
+#header li a{color:#eee; line-height:40px; padding:9px 15px 9px 15px; text-decoration:none;}
+#header li a:hover {color:#f25c27; border-bottom:1px solid #f25c27; text-decoration:none;}
+/*主体*/
+#main {
+width:1200px;
+margin:0 auto;
+font-family:'barkentina1','Microsoft YaHei';
+font-size:16px;
+}
+/*左栏*/
+.col1 {
+width:800px;
+float:left;
+}
+/*右栏*/
+.col2 {
+width:400px;
+float:left;
+}
+/*左栏模块*/
+.block {
+line-height:28px;
+width:760px;
+background-color:#FFFFFF;
+margin:3px 0px 10px 0px;
+padding:0px 20px 5px 20px;
+float:left;
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;
+-webkit-box-shadow:2px 2px 6px #666;
+-moz-box-shadow:2px 2px 6px #666;
+position:relative;
+letter-spacing:0.1em;
+}
+/*右栏模块*/
+.column {
+line-height:24px;
+width:350px;
+background-color:#FFFFFF;
+margin:3px 0px 10px 10px;
+padding:0px 20px 5px 20px;
+float:right;
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;
+-webkit-box-shadow:2px 2px 6px #666;
+-moz-box-shadow:2px 2px 6px #666;
+position:relative;
+letter-spacing:0.12em;
+}
+/*侧栏社交图片*/
+a.weibo{width:24px; height:24px; display:block; float:left; margin:0px 6px 0px 0px; background:url("../img/weibo.png") no-repeat scroll 0px 0;}
+a.weibo:hover{background:url("../img/weibo.png") no-repeat scroll 0px -24px;}
+a.lofter{width:24px; height:24px; display:block; float:left; margin:0px 5px 0px 5px; background:url("../img/lofter.png") no-repeat scroll 0px 0;}
+a.lofter:hover{background:url("../img/lofter.png") no-repeat scroll 0px -24px;}
+a.twitter{width:24px; height:24px; display:block; float:left; margin:0px 5px 0px 5px; background:url("../img/twitter.png") no-repeat scroll 0px 0;}
+a.twitter:hover{background:url("../img/twitter.png") no-repeat scroll 0px -24px;}
+a.aboutme{width:24px; height:24px; display:block; float:left; margin:0px 5px 0px 5px; background:url("../img/aboutme.png") no-repeat scroll 0px 0;}
+a.aboutme:hover{background:url("../img/aboutme.png") no-repeat scroll 0px -24px;}
+a.blogbus{width:24px; height:24px; display:block; float:left; margin:0px 7px 0px 5px; background:url("../img/blogbus.png") no-repeat scroll 0px 0;}
+a.blogbus:hover{background:url("../img/blogbus.png") no-repeat scroll 0px -24px;}
+a.qing{width:48px; height:24px; display:block;  float:left; margin:0px 5px 0px 0px; background:url("../img/qing.png") no-repeat scroll 0px 0;}
+a.qing:hover{background:url("../img/qing.png") no-repeat scroll 0px -24px;}
+.sidesndnimg {
+border:0;}
+/*侧栏跟随模块*/
+#contact {float:left;}
+.floata {width:400px;}
+.floatb {position:fixed;_position:absolute;top:0;z-index:250;}
+/*侧栏头像*/
+.photo {
+width:140px;
+height:170px;
+background:url(../img/photo.png) no-repeat;
+position:relative;
+float:right;
+margin-top:10px;
+margin-right:5px;
+}
+/*侧栏标题*/
+.sidetitle {
+font-size:24px;
+border-bottom:1px solid yellowgreen;
+padding-bottom:15px;
+margin-bottom:0px;
+}
+/*侧栏图片*/
+.sidetitleimg {
+width:36px;
+margin:0px 6px -6px 0px;
+}
+/*标题文字*/
+.title {
+font-size:36px;
+border-bottom:1px solid yellowgreen;
+padding-bottom:15px;
+margin-bottem:0px;
+}
+/*标题图片*/
+.titleimg {
+width:48px;
+margin:0px 6px -8px 0px;
+}
+/*
+/*简历*/
+#resume {
+width:1160px;
+background-color:#FFFFFF;
+margin:10px 0px 10px 0px;
+padding:0px 20px 20px 20px;
+float:left;
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;
+-webkit-box-shadow:2px 2px 6px #666;
+-moz-box-shadow:2px 2px 6px #666;
+position:relative;
+letter-spacing:0.1em;
+}
+#resume a:hover{ color:#54B6F6; text-decoration:none;}
+/*简历背景图片*/
+table {
+text-align:center;
+vertical-align:middle;
+border-collapse:collapse;
+letter-spacing:0.1em;
+float:left;
+}
+table tr, table td {
+border:#ddd 1px solid;
+padding:5px;
+}
+table td:first-child {
+text-align:right;
+}
+table img {
+vertical-align:bottom;
+}
+a.viewlink {width:80px; height:16px; display:block; margin:0 auto; background:url("../img/linkarrow.png") no-repeat scroll 50px 0;}
+a.viewlink:hover {background:url("../img/linkarrow.png") no-repeat scroll 50px -16px;}
+/*简历下载图片*/
+.resumebp {
+margin:0px 5px 1px 0px;
+border:0;
+}
+/*简历文字图片*/
+.resumeap {
+margin:0px 10px 0px 10px;
+height:15px;
+border:0;
+}
+/*页脚*/
+#footer {
+background:url(../img/bg-body.jpg) repeat-x;
+width:100%;
+height:70px;
+margin:0 auto;
+overflow:hidden;
+position:relative;
+border-top:3px ridge #f25c27;
+}
+#footer p {
+width:1200px;
+margin:0 auto;
+padding:10px 0px 5px 0px;
+font-family:微软雅黑;
+font-size:12px;
+letter-spacing:0.1em;
+color:gray;
+text-align:center;
+}
+#footer a {
+color:#808080;
+text-decoration:none;
+}
+/*提示*/
+/* Required Styles */
+#aToolTip {
+	position: absolute;
+	display: none;
+	z-index: 50000;
+}
+#aToolTip .aToolTipContent {
+	position:relative;
+	margin:0;
+	padding:0;
+}
+/* Default Theme */
+.defaultTheme {
+	font-family: 'barkentina1',微软雅黑;
+	font-size:14px;
+	letter-spacing:0.1em;
+	background:#f25c27;
+	color:#fff;
+	margin-left:-50px;
+	padding:3px 6px;
+	-moz-border-radius: 12px 12px 12px 0;
+	-webkit-border-radius: 12px 12px 12px 0;
+	-khtml-border-radius: 12px 12px 12px 0;
+	border-radius: 9px 6px 9px 0;
+}
+/*! fancyBox */
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner,
+.fancybox-image,
+.fancybox-wrap iframe,
+.fancybox-wrap object,
+.fancybox-nav,
+.fancybox-nav span,
+.fancybox-tmp {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	vertical-align: top;
+}
+.fancybox-wrap {position: absolute;top: 0;left: 0;z-index: 8020;}
+.fancybox-skin {
+	position: relative;
+	background: #f9f9f9;
+	color: #444;
+	text-shadow: none;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	        border-radius: 4px;
+}
+.fancybox-opened {z-index: 8030;}
+.fancybox-opened .fancybox-skin {
+	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.fancybox-outer, .fancybox-inner {position: relative;}
+.fancybox-inner {overflow: hidden;}
+.fancybox-type-iframe .fancybox-inner {-webkit-overflow-scrolling: touch;}
+.fancybox-error {
+	color: #444;
+	font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 0;
+	padding: 15px;
+	white-space: nowrap;
+}
+.fancybox-image, .fancybox-iframe {display: block;width: 100%;height: 100%;}
+.fancybox-image {max-width: 100%;max-height: 100%;}
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {background-image: url('../img/fancybox_sprite.png');
+}
+#fancybox-loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -22px;
+	margin-left: -22px;
+	background-position: 0 -108px;
+	opacity: 0.8;
+	cursor: pointer;
+	z-index: 8060;
+}
+#fancybox-loading div {width: 44px;height: 44px;background: url('../img/fancybox_loading.gif') center center no-repeat;}
+.fancybox-close {
+	position: absolute;
+	top: -18px;
+	right: -18px;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	z-index: 8040;
+}
+.fancybox-nav {
+	position: absolute;
+	top: 0;
+	width: 40%;
+	height: 100%;
+	cursor: pointer;
+	text-decoration: none;
+	background: transparent url('../img/fancybox_blank.gif'); /* helps IE */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	z-index: 8040;
+}
+.fancybox-prev {left: 0;}
+.fancybox-next {right: 0;}
+.fancybox-nav span {
+	position: absolute;
+	top: 50%;
+	width: 36px;
+	height: 34px;
+	margin-top: -18px;
+	cursor: pointer;
+	z-index: 8040;
+	visibility: hidden;
+}
+.fancybox-prev span {left: 10px;background-position: 0 -36px;}
+.fancybox-next span {right: 10px;background-position: 0 -72px;}
+.fancybox-nav:hover span {visibility: visible;}
+.fancybox-tmp {
+	position: absolute;
+	top: -99999px;
+	left: -99999px;
+	visibility: hidden;
+	max-width: 99999px;
+	max-height: 99999px;
+	overflow: visible !important;
+}
+.fancybox-lock {overflow: hidden;}
+.fancybox-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	display: none;
+	z-index: 8010;
+	background: url('../img/fancybox_overlay.png');
+}
+.fancybox-overlay-fixed {position: fixed;bottom: 0;right: 0;}
+.fancybox-lock .fancybox-overlay {overflow: auto;overflow-y: scroll;}
+.fancybox-close {display:none;}
+#warningcontent {padding:20px 40px;}
+#warningcontent p {font-family:'barkentina1','Microsoft YaHei';letter-spacing:0.1em;line-height:1.5em;}
+#warningcontent p:last-child {margin-top:100px;}
+#warningcontent a {background:url("../img/linkarrow.png") no-repeat scroll 40px 2px;padding:0px 15px 0px 0px;}
+#warningcontent a:hover {background:url("../img/linkarrow.png") no-repeat scroll 40px -14px;color:#f25c27;}
+/*侧栏浮动模块*/
+/*
+#fl_menu{position:absolute; top:250px; left:50%; z-index:999; margin-left:-630px; width:150px; height:50px;}
+#fl_menu .label{padding-left:30px; line-height:40px; font-family:微软雅黑, Arial, Helvetica, sans-serif; font-size:16px; background:#212226; color:#fff; letter-spacing:2px;}
+#fl_menu .menu{display:none;}
+#fl_menu .menu .menu_item{display:block; background:#212226; color:#bbb; border-top:1px solid #333; padding:10px 20px; font-family:Arial, Helvetica, sans-serif; font-size:12px; text-decoration:none;}
+#fl_menu .menu a.menu_item:hover{background:#333; color:#fff; border-top:1px solid yellowgreen;}
+#fl_menu img {margin:0px 6px -3px 0px; border:0;}
+*/
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../js/jquery-1.7.2.min.js">\x3C/script>')</script>
+<script type="text/javascript" src="../js/jquery.atooltip.js"></script>
+<script type="text/javascript" src="../js/jquery.sticky.js"></script>
+<script type="text/javascript" src="../js/jquery.animate-colors-1.7.2--min.js"></script>
+<script type="text/javascript" src="../js/jquery.anchor.1.0.js"></script>
+<script type="text/javascript" src="../js/jquery.fancybox.pack.js"></script>
+<script>
+function autoclick(){
+ lnk = document.getElementById("warning");
+ lnk.click();
+}
+$(function(){
+    $(".smooth").zxxAnchor({
+        anchortag: "href"                       
+    })
+})
+</script>
+<!--<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+<script src="http://siteapp.baidu.com/static/webappservice/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">uaredirect("http://wanghao.hk");</script>-->
+</head>
+<body onload="autoclick()">
+<a class="fancybox" id="warning" href="#warningcontent" style="display:none;">Inline</a>
+<div id="warningcontent" style="display:none;"><p>This page was last updated on March 2013, it has been temporary suspended for some content might be outdated. I truly apologized for the inconvenience while your visiting.</p><center><p>Please continue to the next page <a href="../contact.html" target="_self">here</a>,<br>or click <a href="http://blog.wanghao.hk/" target="_blank">here</a> to visit my blog or any other social network to learn more</p></center></div>
+<!--弹窗效果-->
+<script>
+            $(".fancybox").fancybox({
+		        maxWidth	: 800,
+		        maxHeight	: 300,
+		        fitToView	: false,
+		        width		: '70%',
+	        	height		: '70%',
+		        autoSize	: false,
+		        closeClick	: false,
+		        openEffect	: 'fade',
+				openSpeed   : 'slow',
+		        closeEffect	: 'none',
+	        })
+</script>
+<div style="width:100%; height:5px; background:url(../img/top.jpg) repeat-x;"></div>
+<!--导航-->
+<div id="nav"><ul>
+<img src="../img/avatar.png" style="position:absolute; float:left; margin-left:-20px;" />
+<img src="../img/avatar.gif" style="width:60px; height:120px; position:absolute; float:left; margin-left:42px; margin-top:-3px; z-index:999;"/>
+<li><a href="../contact.html" target="_self" style="margin-right:40px;">Contact</a></li>
+<li><a target="_self">Resume</a></li>
+<li><a href="work.html" target="_self">Work</a></li>
+<li><a href="http://blog.wanghao.hk" target="_blank">Blog</a></li>
+<li><a href="home.html" target="_self">Home</a></li>
+</ul></div><!--nav-->
+<!--导航效果-->
+<script>$(document).ready(function(){
+			 $("#nav li").not("li:contains(Resume)").fadeTo(10,0.6)
+			 $("#nav li:contains(Resume)").css("background","#F25C27")
+			 $("#nav li").hover(function(){
+				  $(this).stop().fadeTo(300,1)},function(){
+				  $(this).not("li:contains(Resume)").stop().fadeTo(300,0.6)
+			 })
+		})
+</script>
+<!--分隔-->
+<div style="width:100; height:30px; background-color:#F25C27; clear:both;"></div>
+<!--菜单-->
+<div id="header"><ul>
+<li><a target="_self">English</a></li>
+<li><a href="../resume.html" target="_self">Chinese</a></li>
+<li><a href="#experience" target="_self" class="smooth" style="border-left:#f25c27 dashed 1px;">Experience</a></li>
+<li><a href="#advantage" target="_self" class="smooth">Advantage</a></li>
+<li><a href="#ability" target="_self" class="smooth">Skills & Languages</a></li>
+<li><a href="#education" target="_self" class="smooth">Education & Award</a></li>
+<li><a href="#job" target="_self" class="smooth">Objective</a></li>
+<li><a href="#resume" target="_self" class="smooth">Download Resume</a></li>
+<li><a href="#nav" target="_self" class="smooth">Top&#x21E1;</a></li>
+</ul></div><!--header-->
+<!--菜单效果-->
+<script>
+   $(window).load(function(){
+      $("#header").sticky({ topSpacing: 0 });
+   });
+</script>
+<script>$(document).ready(function(){
+	        $("#header a").hover(function(){
+		        $(this).stop().animate({color:"#f25c27"},300)}
+		        ,function(){
+		        $(this).stop().animate({color:"#eee"},300)
+	        })
+	    })
+</script>
+<div style="clear:both"></div>
+<!--主体-->
+<div id="main">
+<!--获取简历-->
+<div id="resume">
+<p class="title"><img src="../img/title.png" class="titleimg"/>Download Resume</p>
+<p>To choose any link to get my full resume on your convenience:</p>
+<table width="600px">
+  <tr>
+    <td bgcolor="#54B6F6" style="color:#FFF;"><img src="../img/down.png" class="resumebp" />Download</td>
+    <td>Trad Chinese</td>
+    <td>Simp Chinese</td>
+    <td>English</td>
+  </tr>
+  <tr>
+    <td>Local</td>
+    <td><a href="http://wanghao.hk/storage/王昊_個人簡歷_中國政法大學.pdf" class="fixedTip exampleTip" title="Right Click & save as"><img src="../img/pdf.png" class="resumeap" /></a>|<a href="http://wanghao.hk/storage/王昊_個人簡歷_中國政法大學.doc"><img src="../img/doc.png" class="resumeap" /></a></td>
+    <td><a href="http://wanghao.hk/storage/王昊_个人简历_中国政法大学.pdf" class="fixedTip exampleTip" title="Right Click & save as"><img src="../img/pdf.png" class="resumeap" /></a>|<a href="http://wanghao.hk/storage/王昊_个人简历_中国政法大学.doc"><img src="../img/doc.png" class="resumeap" /></a></td>
+    <td><a class="fixedTip exampleTip" title="not available"><img src="../img/pdf.png" class="resumeap" /></a>|<a class="fixedTip exampleTip" title="not available"><img src="../img/doc.png" class="resumeap" /></a></td>
+  </tr>
+  <tr>
+    <td>Dropbox</td>
+    <td><a href="http://dl.dropbox.com/s/stvszmhqshjsaqo/王昊_個人簡歷_中國政法大學.pdf?dl=1" class="fixedTip exampleTip" title="Right Click & save as"><img src="../img/pdf.png" class="resumeap" /></a>|<a href="http://dl.dropbox.com/s/q327yojxqdha1tt/王昊_個人簡歷_中國政法大學.doc?dl=1"><img src="../img/doc.png" class="resumeap" /></a></td>
+    <td><a href="http://dl.dropbox.com/s/m4znax12qirxfx3/王昊_个人简历_中国政法大学.pdf?dl=1" class="fixedTip exampleTip" title="Right Click & save as"><img src="../img/pdf.png" class="resumeap" /></a>|<a href="http://dl.dropbox.com/s/ylt7toypgs6kcwr/王昊_个人简历_中国政法大学.doc?dl=1"><img src="../img/doc.png" class="resumeap" /></a></td>
+    <td><a class="fixedTip exampleTip" title="not available"><img src="../img/pdf.png" class="resumeap" /></a>|<a class="fixedTip exampleTip" title="not available"><img src="../img/doc.png" class="resumeap" /></a></td>
+  </tr>
+  <tr>
+    <td>Copy</td>
+    <td><a href="https://copy.com/web/Resume/王昊_個人簡歷_中國政法大學.pdf?download=1" class="fixedTip exampleTip" title="Right Click & save as"><img src="../img/pdf.png" class="resumeap" /></a>|<a href="https://copy.com/web/Resume/王昊_個人簡歷_中國政法大學.doc?download=1"><img src="../img/doc.png" class="resumeap" /></a></td>
+    <td><a href="https://copy.com/web/Resume/王昊_个人简历_中国政法大学.pdf?download=1" class="fixedTip exampleTip" title="Right Click & save as"><img src="../img/pdf.png" class="resumeap" /></a>|<a href="https://copy.com/web/Resume/王昊_个人简历_中国政法大学.doc?download=1"><img src="../img/doc.png" class="resumeap" /></a></td>
+    <td><a class="fixedTip exampleTip" title="not available"><img src="../img/pdf.png" class="resumeap" /></a>|<a class="fixedTip exampleTip" title="not available"><img src="../img/doc.png" class="resumeap" /></a></td>
+  </tr>
+  <tr>
+    <td>GoogleDrive</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=0BzDu1JXRmgv4Vk1odUpzRXVmNmM#王昊_個人簡歷_中國政法大學.pdf" class="fixedTip exampleTip" title="Right Click & save as"><img src="../img/pdf.png" class="resumeap" /></a>|<a href="https://drive.google.com/uc?export=download&id=0BzDu1JXRmgv4X0Q3R3BwTlg5ejQ#王昊_個人簡歷_中國政法大學.doc"><img src="../img/doc.png" class="resumeap" /></a></td>
+    <td><a href="https://drive.google.com/uc?export=download&id=0BzDu1JXRmgv4ZWRIdWJIVmN2eGc#王昊_个人简历_中国政法大学.pdf" class="fixedTip exampleTip" title="Right Click & save as"><img src="../img/pdf.png" class="resumeap" /></a>|<a href="https://drive.google.com/uc?export=download&id=0BzDu1JXRmgv4YzhCek1MY1JCLXc#王昊_个人简历_中国政法大学.doc"><img src="../img/doc.png" class="resumeap" /></a></td>
+    <td><a class="fixedTip exampleTip" title="not available"><img src="../img/pdf.png" class="resumeap" /></a>|<a class="fixedTip exampleTip" title="not available"><img src="../img/doc.png" class="resumeap" /></a></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="text-align:left;font-size:14px;">* Resume is provided in 3 languages for your convenience.<br>* Choosing any link up to your download speed and condition.<br>* Each Resume is provided both in <a style="border-bottom:dotted 1px;" class="fixedTip exampleTip" title="PDF viwer required">PDF</a> and <a style="border-bottom:dotted 1px;" class="fixedTip exampleTip" title="Office soft required">DOC</a> format with no difference.</td>
+  </tr>
+</table>
+<table width="500px" style="margin-left:20px;">
+  <tr>
+    <td bgcolor="#99CC33" style="color:#FFF;"><img src="../img/view.png" class="resumebp" />View Online</td>
+    <td>Trad Chinese</td>
+    <td>Simp Chinese</td>
+    <td>&nbsp;&nbsp;&nbsp;English&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td>GoogleDocs</td>
+    <td><a href="http://goo.gl/gEwf9" target="_blank" class="viewlink"><img src="../img/reader.png" class="resumeap" /></a></td>
+    <td><a href="http://goo.gl/w2L4n" target="_blank" class="viewlink"><img src="../img/reader.png" class="resumeap" /></a></td>
+    <td><a class="fixedTip exampleTip" title="not available"><img src="../img/reader.png" class="resumeap" /></a></td>
+  </tr>
+  <tr>
+    <td>SkyDrive</td>
+    <td><a href="http://sdrv.ms/YMRkh4" target="_blank" class="viewlink"><img src="../img/office.png" class="resumeap" /></a></td>
+    <td><a href="http://sdrv.ms/YMRjd6" target="_blank" class="viewlink"><img src="../img/office.png" class="resumeap" /></a></td>
+    <td><a class="fixedTip exampleTip" title="not available"><img src="../img/office.png" class="resumeap" /></a></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="text-align:left;font-size:14px;">* To view right now through Google Documents or Microsoft Office Online Service. However, you can also use internal download function.</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFBB33" style="color:#fff;">Subscription</td>
+    <td colspan="3"><a><s>hiryan@live.hk</s></a></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="text-align:left;font-size:14px;">* Sending an email to get my resume replied automatically.</td>
+  </tr>
+</table>
+</div><!--resume-->
+<!--提示效果-->
+<script type="text/javascript">
+			$(function(){ 
+				$('a.normalTip').aToolTip();
+				$('a.fixedTip').aToolTip({
+		    		fixed: true
+				});	
+			}); 
+</script>
+<!--左栏-->
+<div class="col1">
+<!--岗位优势-->
+<div id="advantage" class="block">
+<p class="title"><img src="../img/title.png" class="titleimg"/>Advantage</p>
+<p>1. 拥有国家级大型媒体工作经历，具有良好的前端设计(HTML/CSS/JS)理念以及制作技能，优秀的图文编译能力；</p>
+<p>2. 具有优秀的策划能力，思维活跃，善于利用新兴产品改善工作成果，善于学习汲取其他产品优秀经验，富有分享精神；</p>
+<p>3. 了解互联网及移动互联网的新兴产品，熟悉论坛、博客特别是微博、轻博客、SNS等互动产品，具有一定的推广经验；</p>
+<p>4. 具有良好的新闻敏感性，擅于在碎片化的网络信息中过滤有价值的信息与资源，擅长对素材的加工与整合利用。</p>
+</div><!--advantage-->
+<!--语言能力与专长-->
+<div id="ability" class="block">
+<p class="title"><img src="../img/title.png" class="titleimg"/>Skills & Languages</p>
+<p>1. IELTS 雅思成绩 6.0（2013年3月）；大学英语六级（507）；较好的中英文写作能以及流利的中文；</p>
+<p>2. 摄影；写作；策划；熟练掌握Office、Photoshop、Dreamweaver等各类日常办公软件等；会使用非线性编辑软件进行视频剪辑及包装；会综合利用各类实用软件及多种工具完善工作成果，有丰富的工具软件、APP及互联网产品使用经验；</p>
+<p>3. 优秀的图文编辑能力，良好的新闻敏感性，擅长过滤价值信息以及追根溯源，此外对素材的加工和整合能力较强，乐于分享；</p>
+<p>4. 热爱设计，包括专题包装、图片美化，熟悉HTML/CSS代码制作网页，会使用JavaScript/jQuery丰富页面效果，解决基础的浏览器兼容性问题。</p>
+</div><!--ability-->
+<!--工作经历-->
+<div id="experience" class="block">
+<p class="title"><img src="../img/title.png" class="titleimg"/>Experience</p>
+<p><strong>2011.09 - 2012.07  央视国际（央视网/CCTV.com）网络有限公司  新闻中心</strong></p>
+<p>1. <strong>互动策划</strong>：根据实事动态，追踪社会热点事件，或在重要节日推出具有互动特色的内容策划，形式包括新闻台专题页面、复兴论坛集纳或CNTV微博专题等，多部原创作品登上央视网首页头条推荐（详见作品展示）;</p>
+<p>2. <strong>产品策划与专题制作</strong>：主要为互动类新闻产品的策划与制作，包括“复兴晚报”“琉影系列摄影报道”等等，也包括根据上级指示完成的“新闻联播官方微博可行性与风险评估报告”“爆料中国平台策划方案”等等；专题搭建包括使用CMS后台内容管理系统完成央视网新闻台多部重点栏目的日播专题搭建，如“网言网语”“复兴调查”“留言部委”等，也包括承担央视网名牌栏目“中国好人”多期特别策划的原创设计制作；</p>
+<p>3. <strong>网页设计与页面包装</strong>：综合使用Dreamwaver / Photoshop等等软件编写CSS+DIV及使用Javascript / jQuery代码等制作专题页面，也为其他同事提供专题包装、页面美化、浏览器兼容性问题等基础的页面技术支持；</p>
+<p>4. <strong>微博运营</strong>：追追踪每日热点及热门社会事件并集中梳理，同时推广自身产品，主要参与运营的官方认证微博包括“@央视网新闻（人气12万+）@民声发现（人气4万+）@中国网络电视台中国好人栏目（多平台同步，以上以新浪微博为例）”；</p>
+<p>5. <strong>页面维护与论坛运营</strong>：包括央视网新闻台所有新闻正文页通用右栏维护、复兴论坛首页维护、新闻台民声在线频道首页维护、复兴论坛热点弹窗日常维护等等；作为复兴论坛版主，进行当日话题引导，每日热点动态集纳，与网友互动提升论坛人气，发起线上活动近期如神九“飞天梦”有奖征集活动等等，并进行论坛后台日常维护管理。</p>
+<p>2012年十月后曾短暂在环球日报社官方网站环球网从事与在央视网期间类似工作</p>
+<p><strong>2009.08 - 2011.08  北京智创（178/3DM）网络有限公司（现更名为欢乐鸟）</strong></p>
+<p><strong>2008.06 - 2008.09  北京市昌平区人民法院刑事审判庭  专业实习：优秀</strong></p>
+<p><strong>2007.06 - 2007.07  洛阳市涧西区人民检察院公诉科  社会实践：良好</strong></p>
+</div><!--experience-->
+<!--自我评价与求职意向-->
+<div id="job" class="block">
+<p class="title"><img src="../img/title.png" class="titleimg"/>Objective</p>
+<p style="text-indent:2em">性格踏实，办事细心；人际关系融洽，重视团队合作力量，力所能及范围之内从不愿辜负同事及上级期许，力求使工作结果效益最大化，乐于通过求教和阅读加强自身学习；熟悉网络热爱钻研，能熟练运用互联网新兴产品及多种工具提高工作与生活效率，为人乐于分享；对于工作成果我追求合理创新，避免缺乏特色或者另类做作，希望能够创造耳目一新的观感。</p>
+<p style="border:1px lightgray dashed"></p>
+<p style="text-indent:2em">未来我计划在香港生活，打算寻找一份稳定的工作，能够挑战、锻炼自己，提高自己的工作技能，希望能对我感兴趣的前端设计方向有所帮助，目前我持有香港居留签证及身份证，可以自由在港就业，我期待一个良好的工作环境与设备，同时尊重雇主及雇佣单位的薪酬福利制度，能够承担较大的工作压力。</p>
+</div><!--job-->
+<!--教育背景及荣誉-->
+<div id="education" class="block">
+<p class="title"><img src="../img/title.png" class="titleimg"/>Education & Award</p>
+<p><strong>2005.09 - 2009.07  中国政法大学民商经济法学院 211院校</strong></p>
+<p><strong>2005年7月以前  北京市第八十中学 轴一中 轴三中 北京二七小学</strong></p>
+<p style="border:1px lightgray dashed"></p>
+<p><strong>2011至2012年度</strong></p>
+<p style="text-indent:2em">在单位内刊投稿的“帮助编辑提高日常工作效率的10件小工具”一文和在央视网内部反三俗行动中制作的“CNTV专用反三俗搜索小工具”等多次在中心通发，并获得总监和公司领导的嘉奖，前文后来公开发表在国内知名IT杂志《电脑爱好者》2012年第24期。个人多部原创专题被评为新闻中心当月优秀作品并获领导肯定，另外在页面维护排序和起标题上的心得经验也获得主编认可，作为范例文章在部门推广。</p>
+<p><strong>2007至2008学年  中国政法大学校级“优秀团员”</strong></p>
+<p><strong>2006至2007学年  本科优秀学年论文</strong></p>
+<p><strong>2006至2007学年  民商经济法学院学生会“优秀学生干部”</strong></p>
+</div><!--education-->
+</div><!--col1-->
+<!--右栏-->
+<div class="col2">
+<!--About me-->
+<div id="about" class="column" style="margin-bottom:-37px;">
+<p class="sidetitle">About me</p>
+<div class="photo"></div>
+<p>Ryan H. Wang<br>
+25 yrs old,<br>
+Born in Beijing,<br>
+Living in HK,<br>
+CUPL 2009,<br>
+Bachelor of Laws,<br>
+Front-end developer,</p>
+<p>sharing / software & app / film & U.S. drama / coding / Google fan / Reader / breaking GFW </p>
+</div><!--about-->
+<!--联络方式-->
+<div id="contact"><div id="float" class="floata"><div class="column" style="margin-top:50px; padding-bottom:20px;">
+<p class="sidetitle"><img src="../img/mail.png" class="sidetitleimg"/>Contact</p>
+<p>Tel：(+852) 59315175 Hong Kong<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+86) 13811720399 China</p>
+<p>Email：<a href="mailto:wanghaocupl@hotmail.com">wanghaocupl@hotmail.com</a></p>
+<p style="border:1px lightgray dashed"></p>
+<p class="sidetitle"><img src="../img/rss.png" class="sidetitleimg"/>Social Network</p>
+<p>Find and follow me on:</p>
+<a href="http://weibo.com/wpiratez" class="weibo" target="_blank"></a>
+<a href="http://wpiratez.lofter.com/" class="lofter" target="_blank"></a>
+<a href="https://twitter.com/wanghao1011" class="twitter" target="_blank"></a>
+<a href="http://about.me/wanghao1011" class="aboutme" target="_blank"></a>
+<a href="http://blog.wanghao.hk/" class="blogbus" target="_blank"></a>
+<a href="http://qing.weibo.com/wpiratez" class="qing" target="_blank"></a>
+</div></div></div><!--contact-->
+<!--社交网络效果-->
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".weibo,.lofter,.twitter,.aboutme,.blogbus,.qing").mouseover(function(){
+  $(this).stop().fadeTo(500,0.5)
+  });
+  $(".weibo,.lofter,.twitter,.aboutme,.blogbus,.qing").mouseout(function(){
+  $(this).stop().fadeTo(500,1)
+  });
+});
+</script>
+<!--侧栏跟随效果-->
+<script>
+(function(){
+    var oDiv=document.getElementById("float");
+    var H=0,iE6;
+    var Y=oDiv;
+    while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+    iE6=window.ActiveXObject&&!window.XMLHttpRequest;
+    if(!iE6){
+        window.onscroll=function()
+        {
+            var s=document.body.scrollTop||document.documentElement.scrollTop;
+            if(s>H){oDiv.className="floata floatb";if(iE6){oDiv.style.top=(s-H)+"px";}}
+            else{oDiv.className="floata";}    
+        };
+    }
+})();
+</script>
+</div><!--col2-->
+</div><!--main-->
+<div style="clear:both"></div>
+<!--页脚-->
+<div id="footer">
+<p>© 2013 | Designed by Ryan | Licensed under Creative Commons BY-SA</p>
+<p><a href="home.html" target="_self">Home</a> | <a href="work.html" target="_self">Work</a> | <a href="../index.html" target="_blank">Intro</a> | <a href="http://blog.wanghao.hk/" target="_blank">Blog</a> | <a href="../contact.html" target="_self">Contact</a></p>
+</div><!--footer-->
+<script>$(document).ready(function(){
+	        $("#footer a").hover(function(){
+		        $(this).stop().animate({color:"#ccc"},300)}
+		        ,function(){
+		        $(this).stop().animate({color:"#808080"},300)
+	        })
+	    })
+</script>
+<!--
+<div id="fl_menu"><div class="label">作品展示</div>
+<div class="menu">
+<a href="#resume" class="menu_item"  target="_self">请参见完整简历中的附录部分，您可以：</a>
+<a href="#resume" class="menu_item"  target="_self"><img src="../img/view.png"/>在线查阅</a>
+<a href="#resume" class="menu_item"  target="_self"><img src="../img/down.png"/>下载简历</a>
+<a href="#header" class="menu_item"  target="_self">返回页首导航</a>
+</div></div><!--fl_menu
+-->
+<!--<script>
+//config
+$float_speed=1500; //milliseconds
+$float_easing="easeOutQuint";
+$menu_fade_speed=500; //milliseconds
+$closed_menu_opacity=0.75;
+
+//cache vars
+$fl_menu=$("#fl_menu");
+$fl_menu_menu=$("#fl_menu .menu");
+$fl_menu_label=$("#fl_menu .label");
+
+$(window).load(function() {
+	menuPosition=$('#fl_menu').position().top;
+	FloatMenu();
+	$fl_menu.hover(
+		function(){ //mouse over
+			$fl_menu_label.fadeTo($menu_fade_speed, 1);
+			$fl_menu_menu.fadeIn($menu_fade_speed);
+		},
+		function(){ //mouse out
+			$fl_menu_label.fadeTo($menu_fade_speed, $closed_menu_opacity);
+			$fl_menu_menu.fadeOut($menu_fade_speed);
+		}
+	);
+});
+
+$(window).scroll(function () { 
+	FloatMenu();
+});
+
+function FloatMenu(){
+	var scrollAmount=$(document).scrollTop();
+	var newPosition=menuPosition+scrollAmount;
+	if($(window).height()<$fl_menu.height()+$fl_menu_menu.height()){
+		$fl_menu.css("top",menuPosition);
+	} else {
+		$fl_menu.stop().animate({top: newPosition}, $float_speed, $float_easing);
+	}
+}
+</script>-->
+</body>
+<!--通知栏-->
+<script type="text/javascript" src="js/jbar.js"></script>
+<script type="text/javascript">
+	$(function () {
+	    $.jBar({
+	    	startClosed: true,
+	        type: 'fixed', // Fixed/Static
+	        delay: '500', // In milliseconds
+	        backgroundColor: '#f25c27', // Background Color
+	        borderColor: '#f25c27', // Background Color
+	        buttonTextColor: '#FFF', // Button Text
+	        buttonColor: '#2d2d2d', // Button Color
+	        buttonColorHover: '#DB5903', // Button Color Hover
+	        calltoAction: 'Not your language?', // Call to action text
+	        buttonText: 'Chinese', // Button Text
+	        buttonLink: '../resume.html' // Hyperlink from button
+	    });
+	});
+</script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>PAGEFAULT</title>
+<style type="text/css">
+*,html,body{margin:0px;padding:0px;background:#000080;color:#fff;}
+p,span,table{font-family:fsex300,verdana,sans-serif;}
+@font-face {
+	font-family: 'fsex300';
+	src: url('fonts/fsex300.ttf');
+	src: url('fonts/fsex300-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/fsex300-webfont.woff') format('woff'),
+		 url('fonts/fsex300-webfont.ttf') format('truetype'),
+		 url('fonts/fsex300-webfont.svg#FVGranadaRegular') format('svg');
+}
+@font-face {
+	font-family: 'dos';
+	src: url('fonts/dos.ttf');
+	src: url('fonts/dos-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/dos-webfont.woff') format('woff'),
+		 url('fonts/dos-webfont.ttf') format('truetype'),
+		 url('fonts/dos-webfont.svg#FVGranadaRegular') format('svg');
+}
+.system,.message,.title{width:960px;margin:0 auto;}
+.system{padding:15px 20px;border:1px solid #fff;}
+.system div{float:left;width:450px;}
+.system table{float:right;width:500px;}
+.system table td{text-align:right;}
+.title{margin-top:80px;margin-bottom:40px;text-align:center;}
+.title span{background:#ccc;color:#000080;padding:0 5px;}
+.message{font-size:18px;margin-top:50px;}
+.input{display:none;}
+.h3{text-align:center;}
+.blink,.cursor{visibility:visible;}
+.clear{display:block;clear:both;}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js">\x3C/script>')</script>
+<script type="text/javascript">
+function rollText(input,output,speed){
+	var inText=input.text();
+	var textCont=inText.split("");
+	var i=0;
+	function show(){
+		if(i<textCont.length){		
+			output.append(textCont[i]);
+			i=i+1;
+		};
+	};
+	// text
+	var textTimer=setInterval(show,speed);
+	// blinking
+	//$("<span class='blink'>_</span>").insertAfter(".output");
+	var x;
+	var $blinking = $(".blink,.cursor");
+	setInterval(function(){
+		if(x == 0){
+			$blinking.removeAttr('style');
+			x = 1;
+		} else {
+			if(x = 1) {
+				$blinking.css('visibility','hidden');
+				x = 0;
+			}
+	    }
+	},200);
+};
+$(function(){
+	rollText($(".input"),$(".output"),100);
+	clearInterval(/*textTimer*/);
+});
+</script>
+</head>
+<body>
+	<div class="title"><span>wanghao.hk</span></div>
+    <div class="system">
+        <div>
+            <p>@localhost:> Access request detected</p>
+            <p>@localhost:> Verification established</p>
+            <p>@localhost:> Loading...#404 error, canceled</p>
+            <p>@localhost:> Login failed, handshake retry in 3 sec...</p>
+            <p>@localhost:> Reloading denied, system overload, abort</p>
+            <p>@localhost:> Recover module ready</p>
+            <p>@localhost:> Logging address enabled</p>
+            <p>@localhost:> Rotating logs...completed</p>
+            <p>@localhost:> Session connecting terminated</p>
+            <p>@localhost:> Please reboot</p>
+            <span>C:\></span><span class='cursor'>|</span>
+        </div>
+        <table cellspacing="0" cellpadding="0" border="0">
+        	<tr><td width="20%">0x008000</td><td width="25%">huml.SYS -</td><td width="20%">803e4000</td></tr>
+            <tr><td>33d844be</td><td>Ntice.SYS -</td><td>31ec6c99</td></tr>
+            <tr><td>f95c9000</td><td>Floppy.mpd -</td><td>f93b0000</td></tr>
+            <tr><td>33d8*4be</td><td>Data.SYS -</td><td>33234587</td></tr>
+            <tr><td>33d82553</td><td>Fastfat.SYS -</td><td>34d8**33</td></tr>
+            <tr><td>31ec6c*d</td><td>Null.SYS -</td><td>33d84533</td></tr>
+            <tr><td>f946803E</td><td>CLASS2.dll -</td><td>0x80839d</td></tr>
+            <tr><td>0xF000h9</td><td>Parallel.SYS -</td><td>323x4263</td></tr>
+            <tr><td>31ec7c9b</td><td>Serial.SYS -</td><td>f9265000</td></tr>
+        </table>
+        <span class="clear"></span>
+    </div>
+	<div class="clear"></div>
+    <div class="message">
+        <span class="input">You gotta be kidding me! How did you find this page? Okey, lets talk about this.<br />
+Sometimes shit happens, you know, it just happens, you wanna find something, but it disappeared, finally you found yourself lost, actually, maybe you've gone in wrong direction, it's all about missing, you are looking for a page, found nothing but a place never existed, I'm saying wherever you go, no one will ever know, it's not your fault, even not mine, you just broken my site, broken my heart, it's not just you, it's the same to me, so sad right?<br />
+Well, you think it is the end? Nope, let me tell you how this will end, you head back or keep forward, if not, you will lose yourself on a journey forever, no idea where to go? come on, there is always someplace you can find, call your mom anyway.<br />
+wtf, you are not going to close this page? seriously? GRATS! when you got this message, system just marked your IP, I will hunt you down, well maybe later</span>
+        <span class="output"></span><span class='blink'>_</span>
+    </div>
+</body>
+</html>

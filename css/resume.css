@@ -1,0 +1,338 @@
+/*全局*/
+body {margin:0; padding:0; background:url(../img/faq_bg.png) repeat;  min-width:1210px;}
+/*气泡*/
+.img_p {width:260px; overflow:hidden; font-family:'barkentina1'; font-size:14px; color:#FFF; position:absolute; padding:5px; float:left; margin-left:150px; margin-top:50px; background:#f25c27; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; letter-spacing:0.1em;}
+.img_t {width:0px; height:0px; border-style:solid; border-width:8px 16px 8px 0px; border-color:transparent #f25c27 transparent transparent; margin-left:135px; margin-top:60px; position:absolute;}
+/*菜单*/
+#header {width:100%; height:40px; background-color:#212226; border-top:1px solid #28292E; border-bottom:1px solid #28292E; overflow:hidden; z-index:999; -webkit-box-shadow:1px 1px 3px #666; -moz-box-shadow:1px 1px 3px #666;}
+#header ul {width:1200px; margin:0 auto; font-family:'Microsoft YaHei'; font-size:16px; list-style-type:none; letter-spacing:0.1em; text-align: center;}
+#header li {/*float:left;*/ display: inline-block; background-color:#212226;}
+#header li a{color:#eee; line-height:40px; padding:9px 30px 9px 30px; text-decoration:none;}
+#header li a:hover {color:#f25c27; border-bottom:1px solid #f25c27; text-decoration:none;}
+/*主体*/
+#main {width:1200px; margin:0 auto; font-family:'Open Sans', sans-serif; font-size:16px;}
+/*左栏*/
+.col1 {width:800px; float:left;}
+/*右栏*/
+.col2 {width:400px; float:left;}
+/*左栏模块*/
+.block {
+line-height:28px;
+width:760px;
+background-color:#fff;
+margin:3px 0px 10px 0px;
+padding:0px 20px 5px 20px;
+float:left;
+-webkit-border-radius:2px;
+-moz-border-radius:2px;
+border-radius:2px;
+-webkit-box-shadow:2px 2px 5px #ccc;
+-moz-box-shadow:2px 2px 5px #ccc;
+position:relative;
+letter-spacing:0.1em;
+border-top: 1px solid yellowgreen;
+}
+/*右栏模块*/
+.column {
+line-height:24px;
+width:350px;
+background-color:#fff;
+margin:3px 0px 10px 10px;
+padding:0px 20px 5px 20px;
+float:right;
+-webkit-border-radius:2px;
+-moz-border-radius:2px;
+border-radius:2px;
+-webkit-box-shadow:2px 2px 5px #ccc;
+-moz-box-shadow:2px 2px 5px #ccc;
+position:relative;
+letter-spacing:0.1em;
+border-top: 1px solid #40A8DD;
+}
+.block p,.column p{
+	font-size:15px;
+	line-height: 1.5em;
+	letter-spacing: 1px;
+	color:#333;
+
+}
+.bullet{
+	margin-left: 1.5em;
+    position: relative;
+}
+.bullet:before{
+	content:"•";
+	display: inline-block;
+    font-size: 20px;
+    left: -1em;
+    position: absolute;
+}
+/*侧栏社交图片*/
+a.weibor {width:24px; height:24px; display:block; float:left; margin:0px 6px 0px 0px; background:url("../img/weibo.png") no-repeat scroll 0px 0;}
+a.weibor:hover {background:url("../img/weibo.png") no-repeat scroll 0px -24px;}
+a.lofterr {width:24px; height:24px; display:block; float:left; margin:0px 5px 0px 5px; background:url("../img/lofter.png") no-repeat scroll 0px 0;}
+a.lofterr:hover {background:url("../img/lofter.png") no-repeat scroll 0px -24px;}
+a.twitterr {width:24px; height:24px; display:block; float:left; margin:0px 5px 0px 5px; background:url("../img/twitter.png") no-repeat scroll 0px 0;}
+a.twitterr:hover {background:url("../img/twitter.png") no-repeat scroll 0px -24px;}
+a.aboutmer {width:24px; height:24px; display:block; float:left; margin:0px 5px 0px 5px; background:url("../img/aboutme.png") no-repeat scroll 0px 0;}
+a.aboutmer:hover {background:url("../img/aboutme.png") no-repeat scroll 0px -24px;}
+a.blogbusr {width:24px; height:24px; display:block; float:left; margin:0px 7px 0px 5px; background:url("../img/blogbus.png") no-repeat scroll 0px 0;}
+a.blogbusr:hover {background:url("../img/blogbus.png") no-repeat scroll 0px -24px;}
+a.qingr {width:48px; height:24px; display:block;  float:left; margin:0px 5px 0px 0px; background:url("../img/qing.png") no-repeat scroll 0px 0;}
+a.qingr:hover {background:url("../img/qing.png") no-repeat scroll 0px -24px;}
+.sidesndnimg {border:0;}
+/*侧栏跟随模块*/
+#contactr {float:left;}
+.floata {width:400px;}
+.floatb {position:fixed; _position:absolute; top:0; z-index:250;}
+/*侧栏头像*/
+.photo {width:150px; height:150px; background:url(../img/rhw.png) no-repeat; position:relative; float:right; margin-top:20px; background-size: contain;}
+/*侧栏标题*/
+.sidetitle {font-size:24px!important; border-bottom:1px dashed yellowgreen; padding-bottom:15px; margin-bottom:0px; font-family:'Microsoft YaHei';}
+/*侧栏图片*/
+.sidetitleimg {width:36px; margin:0px 6px -9px 0px;}
+/*标题文字*/
+.title {font-size:36px!important; border-bottom:1px dashed yellowgreen; padding-bottom:15px; margin:20px 0; font-family:'Microsoft YaHei';}
+/*标题图片*/
+.titleimg {width:48px; margin:0px 6px -8px 0px;}
+/*简历*/
+#resume {
+width:1160px;
+background-color:#fff;
+margin:10px 0px 10px 0px;
+padding:0px 20px 20px 20px;
+float:left;
+-webkit-border-radius:2px;
+-moz-border-radius:2px;
+border-radius:2px;
+-webkit-box-shadow:2px 2px 5px #ccc;
+-moz-box-shadow:2px 2px 5px #ccc;
+position:relative;
+letter-spacing:0.1em;
+}
+.link{color:#F25C27!important;}
+.link:after{
+	content: url(../img/argrey.png);
+    margin-left: .2em;
+}
+.link:hover:after{content: url(../img/arblue.png);}
+#resume .note{letter-spacing: 0;text-align: center;}
+#resume a:hover {color:#54B6F6; text-decoration:none;}
+#projects p{line-height: 1.25em;}
+/*简历背景图片*/
+table {text-align:center; vertical-align:middle; border-collapse:collapse; letter-spacing:0.1em; float:left;}
+table tr, table td { border:#ddd 1px solid; padding:5px;}
+table td:first-child {text-align:right;}
+table img {vertical-align:bottom;}
+a.viewlink {width:80px; height:16px; display:block; margin:0 auto; background:url("../img/linkarrow.png") no-repeat scroll 50px 0;}
+a.viewlink:hover {background:url("../img/linkarrow.png") no-repeat scroll 50px -16px;}
+/*简历下载图片*/
+.resumebp {margin:0px 5px 1px 0px; border:0;}
+/*简历文字图片*/
+.resumeap {margin:0px 10px 0px 10px ;height:15px; border:0;}
+/*页脚*/
+#footerr {background:url(../img/bg-body.jpg) repeat-x; width:100%; height:70px; margin:0 auto; overflow:hidden; position:relative; border-top:3px ridge #f25c27;}
+#footerr p {width:1200px; margin:0 auto; padding:10px 0px 5px 0px; font-family:'Microsoft YaHei'; font-size:12px; letter-spacing:0.1em; color:gray; text-align:center;}
+#footerr a {color:#808080; text-decoration:none;}
+/*提示*/
+/* Default Theme */
+.defaultTheme {margin-left:-50px !important;}
+/*! fancyBox */
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner,
+.fancybox-image,
+.fancybox-wrap iframe,
+.fancybox-wrap object,
+.fancybox-nav,
+.fancybox-nav span,
+.fancybox-tmp {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	vertical-align: top;
+}
+.fancybox-wrap {position: absolute;top: 0;left: 0;z-index: 8020;}
+.fancybox-skin {
+	position: relative;
+	background: #f9f9f9;
+	color: #444;
+	text-shadow: none;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	        border-radius: 4px;
+}
+.fancybox-opened {z-index: 8030;}
+.fancybox-opened .fancybox-skin {
+	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.fancybox-outer, .fancybox-inner {position: relative;}
+.fancybox-inner {overflow: hidden;}
+.fancybox-type-iframe .fancybox-inner {-webkit-overflow-scrolling: touch;}
+.fancybox-error {
+	color: #444;
+	font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 0;
+	padding: 15px;
+	white-space: nowrap;
+}
+.fancybox-image, .fancybox-iframe {display: block;width: 100%;height: 100%;}
+.fancybox-image {max-width: 100%;max-height: 100%;}
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {background-image: url('../img/fancybox_sprite.png');
+}
+#fancybox-loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -22px;
+	margin-left: -22px;
+	background-position: 0 -108px;
+	opacity: 0.8;
+	cursor: pointer;
+	z-index: 8060;
+}
+#fancybox-loading div {width: 44px;height: 44px;background: url('../img/fancybox_loading.gif') center center no-repeat;}
+.fancybox-close {
+	position: absolute;
+	top: -18px;
+	right: -18px;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	z-index: 8040;
+}
+.fancybox-nav {
+	position: absolute;
+	top: 0;
+	width: 40%;
+	height: 100%;
+	cursor: pointer;
+	text-decoration: none;
+	background: transparent url('../img/fancybox_blank.gif'); /* helps IE */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	z-index: 8040;
+}
+.fancybox-prev {left: 0;}
+.fancybox-next {right: 0;}
+.fancybox-nav span {
+	position: absolute;
+	top: 50%;
+	width: 36px;
+	height: 34px;
+	margin-top: -18px;
+	cursor: pointer;
+	z-index: 8040;
+	visibility: hidden;
+}
+.fancybox-prev span {left: 10px;background-position: 0 -36px;}
+.fancybox-next span {right: 10px;background-position: 0 -72px;}
+.fancybox-nav:hover span {visibility: visible;}
+.fancybox-tmp {
+	position: absolute;
+	top: -99999px;
+	left: -99999px;
+	visibility: hidden;
+	max-width: 99999px;
+	max-height: 99999px;
+	overflow: visible !important;
+}
+.fancybox-lock {overflow: hidden;}
+.fancybox-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	display: none;
+	z-index: 8010;
+	background: url('../img/fancybox_overlay.png');
+}
+.fancybox-overlay-fixed {position: fixed;bottom: 0;right: 0;}
+.fancybox-lock .fancybox-overlay {overflow: auto;overflow-y: scroll;}
+.fancybox-close {display:none;}
+#warningcontent {padding:20px 40px;}
+#warningcontent p {font-family:'barkentina1','Microsoft YaHei';letter-spacing:0.1em;line-height:1.5em;}
+#warningcontent p:last-child {margin-top:100px;line-height:2em;}
+#warningcontent a {background:url("../img/linkarrow.png") no-repeat scroll 37px 2px;padding:0px 15px 0px 0px;}
+#warningcontent a:hover {background:url("../img/linkarrow.png") no-repeat scroll 37px -14px;color:#f25c27;}
+/*侧栏浮动模块*/
+/*
+#fl_menu{position:absolute; top:250px; left:50%; z-index:999; margin-left:-630px; width:150px; height:50px;}
+#fl_menu .label{padding-left:30px; line-height:40px; font-family:微软雅黑, Arial, Helvetica, sans-serif; font-size:16px; background:#212226; color:#fff; letter-spacing:2px;}
+#fl_menu .menu{display:none;}
+#fl_menu .menu .menu_item{display:block; background:#212226; color:#bbb; border-top:1px solid #333; padding:10px 20px; font-family:Arial, Helvetica, sans-serif; font-size:12px; text-decoration:none;}
+#fl_menu .menu a.menu_item:hover{background:#333; color:#fff; border-top:1px solid yellowgreen;}
+#fl_menu img {margin:0px 6px -3px 0px; border:0;}
+*/
+/* Button */
+.cvbutton{display: inline-block;}
+.cvbutton a{
+	display:inline-block;
+	position: relative;
+	width: 200px;
+    height: 72px;
+	overflow: hidden;
+	transition: all .3s;
+	border-radius: 2px;
+}
+.cvbutton p{
+	color:#fff;
+	margin:0;
+	letter-spacing: 0;
+	line-height: 72px;
+    width: 145px;
+    text-align: center;
+    font-family: 'barkentina1';
+}
+.cvbutton .cover{
+	display: block;
+	position: absolute;
+	top:0;
+    width: 60px;
+    height: 80px;
+    z-index: 3;
+    background: url(../img/button_cover.png) no-repeat;
+    background-position: 0 0 !important;
+    float: none;
+    right:-60px;
+    transition: all .3s;
+}
+.cvbutton .icon{
+	display: block;
+	width:48px;
+	height:48px;
+	position: absolute;
+	top:12px;
+	right:10px;
+    transition: all .3s;
+}
+.downloadCV{text-align: right;width:50%;}
+.downloadCV span{background: url(../img/download.png) no-repeat;}
+.viewCV span{background: url(../img/online.png) no-repeat;}
+.cvbutton a:hover .cover{right:0;}
+.cvbutton a:hover .icon{transform:scale(.95);}
+.downloadCV a{background-color: #54C9FE;}
+.downloadCV a:hover{background-color: #40A8DD;}
+.viewCV a{background: #81CA48}
+.viewCV a:hover{background-color: #4A9B37;}
+.slink{
+	display: inline-block;
+	width:24px;
+	height:24px;
+	border:2px solid #333;
+	padding:2px;
+	border-radius: 50%;
+	text-align: center;
+    transition: all .3s;
+}
+.slink i{
+	font-size:16px;
+	line-height: 24px;
+	color:#333;
+    transition: all .3s;
+}
+.slink:hover{border-color:#ccc;background: #ccc;}
+.slink:hover i{color:#fff;}

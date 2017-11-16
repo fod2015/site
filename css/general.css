@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+a:link {color:#202020; text-decoration:none;}
+a:hover {color:#808080; text-decoration:none;}
+a:visited {color:#202020;}
+::selection {background:#fe57a1; color:#fff; text-shadow:none;}
+/*字体*/
+@font-face {
+	font-family: 'venera3';
+	src: url('../fonts/venera3-webfont.eot');
+	src: url('../fonts/venera3-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/venera3-webfont.woff') format('woff'),
+		 url('../fonts/venera3-webfont.ttf') format('truetype'),
+		 url('../fonts/venera3-webfont.svg#FVGranadaRegular') format('svg');
+}
+@font-face {
+	font-family: 'barkentina1';
+	src: url('../fonts/barkentina1-webfont.eot');
+	src: url('../fonts/barkentina1-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/barkentina1-webfont.woff') format('woff'),
+		 url('../fonts/barkentina1-webfont.ttf') format('truetype'),
+		 url('../fonts/barkentina1-webfont.svg#FVGranadaRegular') format('svg');
+}
+#nav ul, .contacttitle {font-family:'venera3','Microsoft YaHei';}
+#contactcontent, #right a, #footercontent {font-family:'barkentina1','Microsoft YaHei';}
+/*导航*/
+#nav {margin:0; padding:0; width:100%; height:100px; background:#212226 url(../img/nav_bg.jpg) repeat; overflow:hidden;}
+#nav ul {width:1200px; margin:0 auto; font-size:16px; letter-spacing:0.1em; list-style-type:none;}
+#nav li {float:right; background:#212226 url(../img/nav_bg.jpg);}
+#nav li p {color:#FFF; text-align:center; line-height:18px; font-size:12px; margin-top:-30px; cursor: default;}
+#nav li a{color:#FFF; text-align:center; line-height:100px; padding:40px 30px 40px 30px; text-decoration:none;}
+#nav li a:hover {color:#FFF; background-color:#F25C27; text-decoration:none;}
+/*工作内容展示*/
+.workcontent h2 {color:#333; font-family:'venera3','Microsoft YaHei'; font-size:36px; letter-spacing:0.1em; padding-left:15px; margin-top:25px; margin-bottom:10px;}
+.workcontent h3 {color:#333; font-family:'venera3','Microsoft YaHei'; font-size:28px; letter-spacing:0.1em; padding-left:15px; margin-top:50px; margin-bottom:25px; font-weight: normal; text-align: center;}
+/* General Mosaic Styles */
+.mosaic-block {
+	float:left;
+	position:relative;
+	overflow:hidden;
+	width:365px;
+	height:230px;
+	margin:16.5px;
+	background:#111 url(../img/loading_black.gif) no-repeat center center;
+	border:1px solid #555;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+.mosaic-backdrop {
+	display:none;
+	position:absolute;
+	top:0;
+	height:100%;
+	width:100%;
+	background:#111;
+}
+.mosaic-overlay {
+	display:none;
+	z-index:5;
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:#111;
+}
+.details{margin:15px 15px;}
+.details p{font:300 16px 'barkentina1','Microsoft YaHei'; line-height:8px; letter-spacing:0.1em; color:#fff;}
+.details span{font:300 14px 'barkentina1','Microsoft YaHei'; color:#aaa; letter-spacing:1px; display: block;margin-top:-5px;}
+        /* Custom Animation Styles */
+		.circle .mosaic-overlay {
+			background:url(../img/hover-magnify.png) no-repeat center center;
+			opacity:0;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+			filter:alpha(opacity=00);
+			display:none;
+		}
+		.fade .mosaic-overlay {
+			opacity:0;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+			filter:alpha(opacity=00);
+			background:url(../img/bg-black.png);
+		}
+		.bar .mosaic-overlay {
+			bottom:-80px;
+			height:80px;
+			background:url(../img/bg-black.png);
+		}
+		.bar2 .mosaic-overlay {
+			bottom:-50px;
+			height:100px;
+			opacity:0.8;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+			filter:alpha(opacity=80);
+		}
+		.bar2 .mosaic-overlay:hover {
+			opacity:1;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+			filter:alpha(opacity=100);
+		}
+		.bar3 .mosaic-overlay {
+			top:-80px;
+			height:80px;
+			background:url(../img/bg-black.png);
+		}
+/*提示*/
+/* Required Styles */
+#aToolTip {
+	position: absolute;
+	display: none;
+	z-index: 50000;
+}
+#aToolTip .aToolTipContent {
+	position:relative;
+	margin:0;
+	padding:0;
+}
+/* Default Theme */
+.defaultTheme {
+	font-family: 'barkentina1','Microsoft YaHei';
+	font-size:14px;
+	letter-spacing:0.1em;
+	background:#f25c27;
+	color:#fff;
+	margin:0;
+	padding:3px 6px;
+	-moz-border-radius: 12px 12px 12px 0;
+	-webkit-border-radius: 12px 12px 12px 0;
+	-khtml-border-radius: 12px 12px 12px 0;
+	border-radius: 9px 6px 9px 0;
+}
+/*联系方式及链接*/
+#contact {width:100%; background:url(../img/bg-body.png) repeat; border-top:2px dashed #666;}
+#contactcontent {width:1200px; margin:0 auto; padding:100px 0; overflow:hidden; position:relative; clear:both; color:#f25c27;}
+.contacttitle {font-size:24px; letter-spacing:0.05em;}
+#left {width:40%; float:left; margin-left:10%;}
+#left .contact-picture {width:220px; height:138px; margin:0px 15px 15px 0px; float:left; border:1px solid #aaa;}
+.contactcontent {color:#CCC; letter-spacing:0.15em; line-height:19px; font-size:13px;}
+#right {width:40%; float:right; margin-right:5%;}
+#right a {font-size:14px; width:30%; float:left; color:#f25c27; line-height:36px; letter-spacing: 1px;}
+/*社交网络*/
+.media {margin:0 170px 0px 0px; float:right;}
+a.weibo {width:24px; height:24px; display:block; float:left; margin:0px 5px 0px 0px; background:url("../img/media.png") no-repeat scroll 0px -24px;}
+a.weibo:hover {background:url("../img/media.png") no-repeat scroll 0px 0px;}
+a.qing {width:24px; height:24px; display:block; float:left; margin:0px 5px 0px 5px; background:url("../img/media.png") no-repeat scroll -24px -24px;}
+a.qing:hover {background:url("../img/media.png") no-repeat scroll -24px 0px;}
+a.blogbus {width:24px; height:24px; display:block; float:left; margin:0px 5px 0px 5px; background:url("../img/media.png") no-repeat scroll -48px -24px;}
+a.blogbus:hover {background:url("../img/media.png") no-repeat scroll -48px 0px;}
+a.twitter {width:24px; height:24px; display:block; float:left; margin:0px 5px 0px 5px; background:url("../img/media.png") no-repeat scroll -72px -24px;}
+a.twitter:hover {background:url("../img/media.png") no-repeat scroll -72px 0px;}
+a.lofter {width:24px; height:24px; display:block; float:left; margin:0px 5px 0px 5px; background:url("../img/media.png") no-repeat scroll -96px -24px;}
+a.lofter:hover {background:url("../img/media.png") no-repeat scroll -96px 0px;}
+a.aboutme {width:24px; height:24px; display:block;  float:left; margin:0px 5px 0px 5px; background:url("../img/media.png") no-repeat scroll -120px -24px;}
+a.aboutme:hover {background:url("../img/media.png") no-repeat scroll -120px 0px;}
+.media .slink{
+	display: inline-block;
+	margin-right:3px;
+	width:24px;
+	height:24px;
+	border:2px solid #f25c27;
+	padding:2px;
+	border-radius: 50%;
+	text-align: center;
+    transition: all .3s;
+}
+.media .slink i{
+	font-size:16px;
+	line-height: 24px;
+	color:#f25c27;
+    transition: all .3s;
+}
+.media .slink:hover{border-color:#f25c27;background: #f25c27;}
+.media .slink:hover i{color:#fff;}
+/*页脚*/
+#footer {width:100%; background:#eee url(../img/bg-light.gif) repeat; border-top:2px ridge #f25c27;}
+#footercontent {width:1200px; margin:0 auto; overflow:hidden; position:relative; clear:both; color:#333; font-size:13px; line-height:24px; padding:5px 0px; letter-spacing:0.1em;}
+/*顶部按钮*/
+#topbutton {position:fixed; top:0; right:0; padding:0; z-index:999;}
+a.topbutton {width:42px; height:42px; display:block;  float:left; margin:0; background:url("../img/topbutton.png") no-repeat scroll 0px -42px; border:0;}
+a.topbutton:hover {background:url("../img/topbutton.png") no-repeat scroll 0px 0px; border:0;}
+
+/* Update 2016 */
+
+/* Portfolio Page */
+
+.work-item{width:400px;float:left;}
+.work-item p.tit,.work-item p.name{font:300 16px 'barkentina1','Microsoft YaHei';text-align: center;color:#eee;letter-spacing: 1px;margin:5px 0;line-height: 1.4em;}
+.work-item p.name{font-size:14px;}

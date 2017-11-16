@@ -1,0 +1,1003 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home | Ryan Creative</title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<style type="text/css">
+/*全局*/
+body {margin:0; padding:0; min-width: 1200px;}
+a:link {color:#202020; text-decoration:none;}
+a:hover {color:gray; text-decoration:none;}
+a:visited {color:#202020;}
+::selection {background:#fe57a1; color:#fff; text-shadow:none;}
+/*字体*/
+@font-face {
+	font-family: 'venera3';
+	src: url('../fonts/venera3-webfont.eot');
+	src: url('../fonts/venera3-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/venera3-webfont.woff') format('woff'),
+		 url('../fonts/venera3-webfont.ttf') format('truetype'),
+		 url('../fonts/venera3-webfont.svg#FVGranadaRegular') format('svg');
+}
+@font-face {
+	font-family: 'barkentina1';
+	src: url('../fonts/barkentina1-webfont.eot');
+	src: url('../fonts/barkentina1-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/barkentina1-webfont.woff') format('woff'),
+		 url('../fonts/barkentina1-webfont.ttf') format('truetype'),
+		 url('../fonts/barkentina1-webfont.svg#FVGranadaRegular') format('svg');
+}
+/*导航*/
+#nav {margin:0; padding:0; width:100%; height:100px; background:#212226 url(../img/nav_bg.jpg) repeat; overflow:hidden;}
+#nav ul {width:1200px; margin:0 auto; font-family:'venera3',微软雅黑; font-size:16px; letter-spacing:0.1em; list-style-type:none;}
+#nav li {float:right; background:#212226 url(../img/nav_bg.jpg);}
+#nav li p {color:#FFF; text-align:center; line-height:18px; font-size:12px; margin-top:-30px;}
+#nav li a{color:#FFF; text-align:center; line-height:100px; padding:40px 20px 40px 20px; text-decoration:none;}
+#nav li a:hover {color:#FFF; background-color:#F25C27; text-decoration:none;}
+/*滚动图*/
+#slide {
+margin:0;
+padding:0;
+background:#111 url(../img/bg_repeat_new.jpg) repeat top left;
+}
+#content {
+	margin:0 auto;
+	width: 1200px;
+}
+.accordion {
+    margin:0;
+    padding:0;
+}
+ul.accordion li {
+	background:#111;
+	background-repeat: no-repeat;
+	background-position:  top left;
+}
+ul.accordion:hover li:not(:hover) {
+	opacity:0.6;
+	transition:opacity 1s;
+	-webkit-transition:opacity 1s;
+	-moz-transition:opacity 1s;
+}
+ul.accordion li.bg1 {
+	background-image:url(../img/content/home002.jpg);
+}
+ul.accordion li.bg2 {
+	background-image:url(../img/content/home008.jpg);
+}
+ul.accordion li.bg3 {
+	background-image:url(../img/content/home003.jpg);
+}
+ul.accordion li.bg4 {
+	background-image:url(../img/content/home004.jpg);
+}
+.accordion {
+    list-style:none;   
+    font-family: 'barkentina1',微软雅黑;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.5em;
+    overflow: hidden;
+    padding: 0;
+	-moz-box-shadow:0px 3px 10px #333;
+    -webkit-box-shadow:0px 3px 10px #333;
+    box-shadow:0px 3px 10px #333;
+	position:relative;
+	z-index:99;
+    /*border-top:2px solid #fff;
+        border-left:2px solid #fff;*/
+}
+.accordion li {
+	top: 0;
+	left: 0;
+    float: left;
+    width: 10%;
+    height: 400px;
+    display: block;
+    /*border-right:2px solid #fff;
+        border-bottom:2px solid #fff;*/
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0;
+	-moz-box-shadow:1px 3px 15px #555;
+    -webkit-box-shadow:1px 3px 15px #555;
+    box-shadow:1px 3px 15px #555;
+}
+.accordion h2 {
+    background-color: #111;
+    padding: 10px 0;
+    opacity: 0.1;
+	filter: alpha(opacity=10);
+    top: 383px;
+    width: 100%;
+    position: absolute;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+    color: #F9F9F9;
+    text-align: center;
+}
+.accordion div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+	filter: alpha(opacity=0);
+    background: transparent url(../img/bg-black-300.png) repeat-x bottom center;
+	padding-top: 340px;
+	padding-bottom: 340px;
+	margin-bottom: -340px;
+}
+.accordion div h2 {
+    background: none;
+    padding: 0;
+    position: static;
+    opacity: 1;
+	filter: alpha(opacity=100);
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    font-size: 18px;
+    color: #fff;
+    text-align: left;
+    margin: 0px 0px 15px 20px;
+}
+.accordion div p {
+    line-height: 14px;
+    margin: 10px 22px;
+    font-family: 'barkentina1',微软雅黑;
+    font-size: 14px;
+	color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: 0.1em;
+    line-height: 1.6em;
+}
+.accordion div a {
+	display: block;
+    margin: 5px 0 5px 20px;
+    font-style: normal;
+    font-size: 14px;
+    text-decoration: none;
+    color: #F25B27;
+}
+.accordion div a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+/*问答标签*/
+#faqbg {
+width:100%;
+background:url(../img/faq_bg.png) repeat;
+border-top:2px dashed #CCC;
+}
+#faq {
+width:1197px;
+height:auto;
+min-height:300px;
+border-left:3px solid #F25C27;
+margin:0 auto;
+}
+#faq ul {
+background:url(../img/faq_bg.png);
+overflow:hidden;
+position:relative;
+}
+#faqline {
+width:1297px;
+height:3px;
+margin-left:-100px;
+right:0px;
+background:#F25C27;
+clear:both;
+}
+#tabs {
+overflow: hidden;
+width: 100%;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+#tabs li {
+float: left;
+background: url(../img/faq_bg.png);
+font-family:'barkentina1',微软雅黑;
+font-size:20px;
+letter-spacing:0.1em;
+text-align:center;
+line-height:50px;
+}
+#tabs a {
+padding:13px 30px 13px 30px;
+text-decoration:none;
+}
+#tabs a:hover {
+cursor: pointer;
+color: #FFF;
+background: #F25C27;
+-webkit-box-shadow:0px 5px 10px #B85431 inset;
+-moz-box-shadow:0px 5px 10px #B85431 inset;
+box-shadow:0px 5px 10px #B85431 inset;
+}
+#tabs a:hover::after,
+#tabs a:focus,
+#tabs a:focus::after{
+  background: #fff;
+}
+#tabs a:focus{
+  outline: 0;
+}
+#tabs a::after{
+  position:absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  width: 1em;
+  background: #ddd;
+}
+#tabs #current a{
+  background: #F25C27;
+  color: #FFF;
+  z-index: 3;
+}
+#tabs #current a::after{
+  background: #fff;
+  z-index: 3;
+}
+/*问答标签内容*/
+#tabsbody {
+padding:10px 0px 10px 0px;
+border-left:3px solid #F25C27;
+font-family: 'barkentina1',微软雅黑;
+}
+.nitem a {
+font-weight:bold;
+letter-spacing:0.1em;
+}
+.nitem a:hover {
+color:#f25c27;
+}
+#tabsbody .nitem {
+margin:0;
+line-height:2em;
+}
+#tabsbody .nsub {
+width:1150px;
+}
+#tabsbody p {
+margin:0;
+padding:0px 1em;
+line-height:1.5em;
+letter-spacing:0.1em;
+}
+#tabsbody a:hover {
+color:#f25c27;
+}
+#tabsbody .nsub a:after {
+width:10px;
+height:16px;
+content:url(../img/arblue.png);
+color:#f25c27;
+margin-left:0.2em;
+}
+button {
+margin-left:3em;
+}
+/*提示*/
+/* Required Styles */
+#aToolTip {
+	position: absolute;
+	display: none;
+	z-index: 50000;
+}
+
+#aToolTip .aToolTipContent {
+	position:relative;
+	margin:0;
+	padding:0;
+}
+/* Default Theme */
+.defaultTheme {
+	font-family: 'barkentina1',微软雅黑;
+	font-size:14px;
+	letter-spacing:0.1em;
+	background:#f25c27;
+	color:#fff;
+	margin:0;
+	padding:3px 6px;
+	-moz-border-radius: 12px 12px 12px 0;
+	-webkit-border-radius: 12px 12px 12px 0;
+	-khtml-border-radius: 12px 12px 12px 0;
+	border-radius: 9px 6px 9px 0;
+}
+/*工作内容展示*/
+#work {
+width:100%;
+background:url(../img/work_bg.jpg) repeat;
+border-top:2px dashed #CCC;
+}
+#workcontent {
+width:1200px;
+margin:0 auto;
+overflow:hidden;
+position:relative;
+}
+#workcontent h3 {
+color:#333;
+font-family:'venera3',微软雅黑;
+font-size:36px;
+letter-spacing:0.1em;
+padding-left:15px;
+margin-top:25px;
+margin-bottom:10px;
+}
+/* General Mosaic Styles */
+.mosaic-block {
+	float:left;
+	position:relative;
+	overflow:hidden;
+	width:365px;
+	height:230px;
+	margin:16.5px;
+	background:#111 url(../img/loading_black.gif) no-repeat center center;
+	border:1px solid #555;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+.mosaic-backdrop {
+	display:none;
+	position:absolute;
+	top:0;
+	height:100%;
+	width:100%;
+	background:#111;
+}
+.mosaic-overlay {
+	display:none;
+	z-index:5;
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:#111;
+}
+.details{ margin: 15px 15px; }
+.details h4{ font:300 16px 'barkentina1','微软雅黑'; line-height:2px; letter-spacing:0.1em; color:#fff; }
+.details p{ font:300 14px 'barkentina1','微软雅黑'; color:#aaa; letter-spacing:0.1em; margin-top:-5px;}
+        /* Custom Animation Styles */
+		.circle .mosaic-overlay {
+			background:url(../img/hover-magnify.png) no-repeat center center;
+			opacity:0;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+			filter:alpha(opacity=00);
+			display:none;
+		}
+		.fade .mosaic-overlay {
+			opacity:0;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+			filter:alpha(opacity=00);
+			background:url(../img/bg-black.png);
+		}
+		.bar .mosaic-overlay {
+			bottom:-80px;
+			height:80px;
+			background:url(../img/bg-black.png);
+		}
+		.bar2 .mosaic-overlay {
+			bottom:-50px;
+			height:100px;
+			opacity:0.8;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+			filter:alpha(opacity=80);
+		}
+		.bar2 .mosaic-overlay:hover {
+			opacity:1;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+			filter:alpha(opacity=100);
+		}
+		.bar3 .mosaic-overlay {
+			top:-80px;
+			height:80px;
+			background:url(../img/bg-black.png);
+		}
+/*更多按钮效果*/
+.more {line-height:100px; margin-top:-10px; float:right; margin-right:20px; clear:both;}
+.more a {color:#FFF; font-family: 'barkentina1',微软雅黑; background-color:#f25c27; padding:10px 20px 10px 20px;}
+/*联系方式及链接*/
+#contact {
+width:100%;
+background:url(../img/bg-body.png) repeat;
+border-top:2px dashed #666;
+}
+#contactcontent {
+width:1200px;
+margin:0 auto;
+padding:100px 0;
+overflow:hidden;
+position:relative;
+clear:both;
+color:#f25c27;
+font-family:'barkentina1',微软雅黑;
+}
+.contacttitle {
+font-family:'venera3',微软雅黑;
+font-size:26px;
+font-weight:bold;
+letter-spacing:0.05em;
+}
+#left {
+width:40%;
+float:left;
+margin-left:10%;
+}
+#left img {
+width:220px;
+height:138px;
+margin:0px 15px 15px 0px;
+float:left; border:1px solid #aaa;
+}
+.contactcontent {
+color:#CCC;
+letter-spacing:0.15em;
+line-height:19px;
+font-size:13px;
+}
+#right {
+width:40%;
+float:right;
+margin-right:5%;
+}
+#right a {
+font-size:15px;
+width:30%;
+float:left;
+color:#f25c27;
+line-height:36px;
+font-family:'barkentina1',微软雅黑;
+}
+/*社交网络*/
+.media{margin:15px 130px 0px 0px; float:right;}
+a.weibo{width:24px; height:24px; display:block; float:left; margin:0px 5px 0px 0px; background:url("../img/media.png") no-repeat scroll 0px -24px;}
+a.weibo:hover{background:url("../img/media.png") no-repeat scroll 0px 0px;}
+a.qing{width:24px; height:24px; display:block; float:left; margin:0px 5px 0px 5px; background:url("../img/media.png") no-repeat scroll -24px -24px;}
+a.qing:hover{background:url("../img/media.png") no-repeat scroll -24px 0px;}
+a.blogbus{width:24px; height:24px; display:block; float:left; margin:0px 5px 0px 5px; background:url("../img/media.png") no-repeat scroll -48px -24px;}
+a.blogbus:hover{background:url("../img/media.png") no-repeat scroll -48px 0px;}
+a.twitter{width:24px; height:24px; display:block; float:left; margin:0px 5px 0px 5px; background:url("../img/media.png") no-repeat scroll -72px -24px;}
+a.twitter:hover{background:url("../img/media.png") no-repeat scroll -72px 0px;}
+a.lofter{width:24px; height:24px; display:block; float:left; margin:0px 5px 0px 5px; background:url("../img/media.png") no-repeat scroll -96px -24px;}
+a.lofter:hover{background:url("../img/media.png") no-repeat scroll -96px 0px;}
+a.aboutme{width:24px; height:24px; display:block;  float:left; margin:0px 5px 0px 5px; background:url("../img/media.png") no-repeat scroll -120px -24px;}
+a.aboutme:hover{background:url("../img/media.png") no-repeat scroll -120px 0px;}
+/*页脚*/
+#footer {
+width:100%;
+background:#eee url(../img/bg-light.gif) repeat;
+border-top:2px ridge #f25c27;
+}
+#footercontent {
+width:1200px;
+margin:0 auto;
+overflow:hidden;
+position:relative;
+clear:both;
+color:#333;
+font-family:'barkentina1',微软雅黑;
+font-size:13px;
+line-height:24px;
+padding:5px 0px;
+letter-spacing:0.1em;
+}
+/*顶部按钮*/
+#topbutton {
+position:fixed;
+top:0;
+right:0;
+padding:0;
+z-index:999;
+}
+a.topbutton{width:42px; height:42px; display:block;  float:left; margin:0; background:url("../img/topbutton.png") no-repeat scroll 0px -42px; border:0;}
+a.topbutton:hover{background:url("../img/topbutton.png") no-repeat scroll 0px 0px; border:0;}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../js/jquery-1.7.2.min.js">\x3C/script>')</script>
+<script type="text/javascript" src="../js/jquery.elegantAccordion.min.js"></script>
+<script type="text/javascript" src="../js/mosaic.1.0.1.js"></script>
+<script type="text/javascript" src="../js/jquery.animate-colors-1.7.2--min.js"></script>
+<script type="text/javascript" src="../js/jquery.atooltip.js"></script>
+<script type="text/javascript" src="../js/jquery.anchor.1.0.js"></script>
+<script>
+$(function(){
+    $(".smooth").zxxAnchor({
+        anchortag: "href"                       
+    })
+})
+</script>
+</head>
+<body>
+<div style="width:100%; height:5px; background:#000 url(../img/top.jpg) repeat-x;"></div>
+<!--导航-->
+<div id="nav"><ul>
+<img src="../img/avatar.png" style="position:absolute; float:left; margin-left:-20px;" />
+<img src="../img/avatar.gif" style="width:60px; height:120px; position:absolute; float:left; margin-left:42px; margin-top:-3px; z-index:999;"/>
+<li><a href="../contact.html" target="_self" style="margin-right:40px;">Contact</a></li>
+<li><a href="resume.html" target="_self">Resume</a></li>
+<li><a href="work.html" target="_self">Work</a></li>
+<li><a href="http://blog.wanghao.hk/" target="_blank">Blog</a></li>
+<li><a target="_self">Home</a></li>
+</ul></div><!--nav-->
+<!--导航效果-->
+<script>$(document).ready(function(){
+			 $("#nav li").not("li:contains(Home)").fadeTo(10,0.6)
+			 $("li:contains(Home)").css("background","#F25C27")
+			 $("#nav li").hover(function(){
+				  $(this).stop().fadeTo(300,1)},function(){
+				  $(this).not("li:contains(Home)").stop().fadeTo(300,0.6)
+			 })
+		})
+</script>
+<!--分隔-->
+<div style="width:100; height:30px; background-color:#F25C27; clear:both;"></div>
+<!--滚动图-->
+<div id="slide">
+    <div id="content">
+		<ul class="accordion" id="accordion">
+			<li class="bg1">
+				<h2>Find what you care</h2>
+				<div><a href="#faq" target="_self" class="smooth" style="text-decoration:none;margin:0;padding:0;">
+					<h2>These may be the answers</h2>
+					<p>　　作為雇主，有些信息可能是閣下想在第一時間瞭解的，或許簡歷中的平鋪和羅列有些僵硬，我在此準備了幾個您可能感興趣的話題，也許可以讓您更生動的瞭解我的一些個人情況。<br><br><br></p></a>
+					<a href="#faq" class="smooth">Check it now ->></a>
+				</div>
+			</li>
+			<li class="bg2">
+				<h2>Looking for CV？</h2>
+				<div><a href="resume.html" target="_blank" style="text-decoration:none;margin:0;padding:0;">
+					<h2>Preview & download my resume</h2>
+					<p>　　This website contains some sections that I havn't shown im my resume, I hope these help you to know me better. Addtionaly, a single page of my resume has been provided in the following link, including the file which is also available for being downloaded as PDF or DOC format in 3 languages.</p></a> 
+					<a href="resume.html" target="_blank">Check it now ->></a>
+				</div>
+			</li>
+			<li class="bg3">
+				<h2>Portfolio</h2>
+				<div><a href="work.html" target="_blank" style="text-decoration:none;margin:0;padding:0;">
+					<h2>Back to the Old days</h2>
+					<p>　　如同這個網站一樣，它是我的簡歷也是一份個人作品，爲了方便向閣下展示，我還匯總了以往在工作、學習和生活中創作的一些成果，包括一些頁面設計、文章報告或者我在公開刊物上發表的署名稿件，儘管回顧起來一些早期的作品顯得不那麼成熟，但也許您可以從中大概瞭解我的一些工作方式和特點。<br></p></a>
+					<a href="work.html" target="_blank">Check it now ->></a>
+				</div>
+			</li>
+			<li class="bg4">
+				<h2>Activity & Reading</h2>
+				<div>
+					<h2>Interests or something</h2>
+					<p>　　Google Reader is my favorite RSS reading service that I use every day, I made a list to show you what I'm interested in and the reading sources where I subscribe from. Besides, you can find some articles I published in some magazine and blog.<br><br></p>
+					<a href="#tabs" class="smooth">Check it now ->></a>
+				</div>
+			</li>
+		</ul>
+    </div><!--content-->
+</div><!--slide-->
+<!--滚动图效果-->
+<script type="text/javascript">
+		$(function() {
+			$('#accordion').eAccordion({
+				easing: 'swing',		// Anything other than "linear" or "swing" requires the easing plugin
+				autoPlay: false,			// This turns off the entire FUNCTIONALY, not just if it starts running or not
+				startStopped: false,	// If autoPlay is on, this can force it to start stopped
+				stopAtEnd: false,		// If autoplay is on, it will stop when it reaches the last slide
+				delay: 3000,			// How long between slide transitions in AutoPlay mode
+				animationTime: 600,		// How long the slide transition takes
+				hashTags: true,			// Should links change the hashtag in the URL?
+				pauseOnHover: true,		// If true, and autoPlay is enabled, the show will pause on hover
+				height: 600,			// Override the default CSS height
+				expandedWidth: '540px', // Width of the expanded slide
+				neutralState: true,		// If there should be a state when all pages are equal size (usually onMouseOut)
+				bgHeight: '340px'		// The height of the gradient image (bgDescription.png). Useful if you're modifying the image
+			});
+		});
+</script>
+<!--问答标签-->
+<!--<div id="faqbg">
+    <div id="faq">
+<ul id="tabs">
+    <li id="#tab1"><a name="tab1">INTERVIEW ONLINE</a></li>
+    <li id="#tab2"><a name="tab2">SKILLS</a></li>
+    <li id="#tab3"><a name="tab3">EXPERIENCE</a></li>
+    <li id="#tab4"><a name="tab4">EDUCATION</a></li>
+    <li id="#tab5"><a name="tab5">TOPICS</a></li>
+    <li id="#tab6"><a name="tab6">LIST</a></li> 
+</ul>
+<div id="faqline"></div>
+<div id="tabsbody"> 
+    <div id="tab1">
+        <ul class="nitem"><a href="#">+ 第一印象：一個什麽樣的人</a></ul>
+            <ul class="nsub">
+            <p>- 沉穩、踏實，可以作為我的性格速寫；交際中屬於慢熱型，稍加時間我與朋友同事總是無話不談；</p>
+            <p>- 上手新工作和學習速度比較快，喜歡接受新事物和學習新知識，“分享”是我在生活和工作中非常重視的一種精神。</p>
+        </ul>
+        <ul class="nitem"><a href="#">+ 工作原則</a></ul>
+            <ul class="nsub">
+            <p>- 我認為自己的工作內容、質量和所發揮的貢獻首先要對得起雇主的一份薪水；</p>
+            <p>- 我十分重視工作效率，但如果仍然沒有完成當天的工作目標，我會加班到很晚很晚；</p>
+            <p>- 我從不願意辜負上級和同事的期望幾乎做到有求必應，我會盡自己的努力完善工作成果，把握觀感與質量。</p>
+        </ul>
+        <ul class="nitem"><a href="#">+ 雇主眼中的我</a></ul>
+            <ul class="nsub">
+            <p>- 我曾先後工作在一家小規模私人公司，兩家國家級媒體/大型傳媒機構，我亦十分榮幸自己的表現和能動性贏得了雇主的信任與肯定，在遞交離職報告前後我的歷任雇主和上級都與我做了長時間的交談和挽留，我相信我在工作期間的表現是優秀並且令人滿意的。</p>
+        </ul>
+        <ul class="nitem"><a href="#">+ 同事眼中的我</a></ul>
+            <ul class="nsub">
+            <p>- 我喜歡和同事交流，比如每天討論感興趣的話題或是參加共同活動，我始終盡力與每位身邊的同事保持良好的關係，工作中對於同事我幾乎有求必應，盡自己最大的努力幫助解決同事的問題，分享自己的有益經驗，此外我非常重視團隊合作，對於上級交辦的工作，我會在團隊中發揮應有的能動性，因此我也很幸運尚未遇到過不友好的同事。</p>
+        </ul>
+        <ul class="nitem"><a href="#">+ 我最大的缺點，還有我的優點</a></ul>
+            <ul class="nsub">
+            <p>- 性格上，我屬於偏懷舊的人，工作中，我是一個樂於嘗新的人，不愿過分固守常規與老套，我追求合理的創新，所以個別時候可能會因太過鑽研而拖延了時間；</p>
+            <p>- 保持令人滿意的工作效率，成熟的心理素質，高強度的抗壓能力，是我的優點。</p>
+        </ul>
+    </div>
+    <div id="tab2">
+        <ul class="nitem"><a href="#">+ 工作技能：我會什麽</a></ul>
+            <ul class="nsub">
+            <p>- 熟悉HTML/CSS代碼及佈局重構，編寫及使用JavaScript/jQuery庫豐富前端效果，製作頁面包裝與設計；</p>
+            <p>- 熟悉Photoshop/Dreamweaver等設計軟件，多媒體材料加工編輯，解决跨浏览器的頁面兼容性问题；</p>
+            <p>- 熟悉CMS內容發佈系統，諸如WordPress搭建、部署與使用；熟悉域名解析、綁定與指向，基本SEO技巧；</p>
+            <p>- 熟練掌握Office系列等辦公軟件，製作PPT演示檔案也是我的強項，此外，我也會使用多種非线性编辑软件进行视频剪辑與加工。</p>
+        </ul>
+        <ul class="nitem"><a href="#">+ 工作能力：我擅長什麽？</a></ul>
+            <ul class="nsub">
+            <p>- 我有著不錯的寫作及圖文編譯能力，喜愛閱讀熱愛分享，在互聯網信息爆炸和碎片化的時代，我擅長過濾價值信息與追根溯源；</p>
+            <p>- 我對互聯網和移動互聯網的新興產品非常感興趣，我管理并熟悉論壇社區、博客、微博、輕博客、SNS等互動產品，具有豐富的社交使用與推廣經驗；</p>
+            <p>- 我習慣站在用戶的角度換位思考，具有一定的策劃能力；我對素材的利用和整合能力比較強，發現-收集-整合-利用，能夠在工作中保持活躍的思維；</p>
+            <p>- 軟件達人，我喜歡發現并收集實用工具，有著種類繁多的網絡產品、桌面軟件、瀏覽器擴展等使用經驗，對於提高工作效率與改進工作成果有著很大幫助。</p>
+        </ul>
+        <ul class="nitem"><a href="#">+ 我的語言能力</a></ul>
+            <ul class="nsub">
+            <p>- 我目前已參加過IELTS與CET-6英文水平測試，其中雅思分數為6.0，取得時間是2013年3月；大學英語六級成績是507分（標準綫420分）。此外，我具有良好的中文听说读写能力。</p>
+        </ul>
+    </div>
+    <div id="tab3">
+        <ul class="nitem"><a href="#">+ 我在哪些地方工作過？</a></ul>
+            <ul class="nsub">
+            <p>- 2013年至今 <a href="http://www.pacim.com/" target="_blank" class="fixedTip exampleTip" title="1998年于香港成立，在中國大陸、台灣、南韓、東南亞等地設有分支機構的綜合性創意媒體設計機構">PacificLink iMedia (<b>?</b></a>) Front-end web developer 主要從事前端開發工作</p>
+            <p>- 2011.09 - 2012.09 北京 <a href="http://www.cctv.com" target="_blank" class="fixedTip exampleTip" title="國家級綜合網絡媒體，前身為中央電視臺官方網站，國內最大的官方傳媒機構">cctv.com/cntv.cn (<b>?</b></a>) 央視網/中國網絡電視臺 我在新聞中心從事諸如互動、專題和頁面的策劃與設計工作，還有很多</p>
+            <p>- 2009.07 - 2011.08 北京 <a href="http://www.3dmgame.com/s/about.html" target="_blank" class="fixedTip exampleTip" title="2003年設立，擁有註冊會員500余萬人，成為全球華人範圍內公認的最具人氣及影響力的PC遊戲社區，2009年開始公司化運營，發展門戶網站">3DMgame.com (<b>?</b></a>) 諸如社區運營及論壇管理，從事編輯與專題製作的工作</p>
+            <p>- 2012.10 北京 <a href="http://www.huanqiu.com" target="_blank" class="fixedTip exampleTip" title="人民日報社/人民網股份有限公司旗下，環球日報社主辦的環球日報官方網站，最具國際傳播力的內地媒體">huanqiu.com (<b>?</b></a>) 環球網 離開北京前，我也曾短暫的在環球日報社官方網站做過一些相似工作</p>
+        </ul>
+        <ul class="nitem"><a href="#">+ 我為何更換工作？</a></ul>
+            <ul class="nsub">
+            <p>- 第一次離職：3dmgame是我非常喜歡的網站，一直在遊戲領域工作我也渴望拓展視野鍛煉自己，在憑藉自己的努力和表現通過面試后，我獲得了進入中央電視臺網絡傳播中心工作的機會，不過即便如此，我與前任雇主夫婦仍然結下了不錯的朋友關係，總之我非常感謝這份工作。</p>
+            <p>- 第二次離職：在央視網和環球網的工作令人印象深刻也使我成長很多，離職是出於家庭原因，我已打算和家人團聚離開北京前往香港生活。</p>
+        </ul>
+        <ul class="nitem"><a href="#">+ 工作期間我有哪些令人印象深刻的成果？</a></ul>
+            <ul class="nsub">
+            <p>- 以央視網為例，我撰寫過“新聞聯播官方微博可行性與風險評估報告”受到管理層嘉獎，製作過“復興晚報”與“琉影系列攝影報道”原創互動新聞產品，完成央視網多部重點欄目如“網言網語”“復興調查”“留言部委”的專題搭建，設計并製作過央視網2012年度名牌欄目“中國好人”多期特別策劃（央視新聞聯播2012年6月3日節目曾做過電視報導），受到上級的稱讚與肯定。</p>
+            <p>- 工作間隙，我在央視網內刊投稿的“幫助編輯提高日常工作效率的10件小工具”壹文（後在全國公開刊物上發表），以及在央視網自律活動中制作的“CNTV反三俗專用搜索工具”等多次在新聞中心通發，並獲得管理層嘉獎，我製作的多期原創專題也多次登上央視網全網首頁及新聞臺首頁作頭條推薦，另外我的一些工作經驗和心得分享也獲得上級肯定，作為範例在部門內推廣。</p>
+        </ul>
+    </div>
+    <div id="tab4">
+        <ul class="nitem"><a href="#">+ 我的學位與學歷背景</a></ul>
+            <ul class="nsub">
+            <p>- 2005.09 - 2009.07 北京 我畢業於中國政法大學，國家211/985工程教育部直屬重點院校，我目前的最後學歷是本科，擁有法學學士學位</p>
+        </ul>
+        <ul class="nitem"><a href="#">+ 我在大學期間獲得的一些榮譽</a></ul>
+            <ul class="nsub">
+            <p>- 2007至2008學年 中國政法大學校級“優秀團員”</p>
+            <p>- 2006至2007學年 本科優秀學年論文</p>
+            <p>- 2006至2007學年 中國政法大學民商經濟法學院“優秀學生幹部”</p>
+        </ul>
+        <ul class="nitem"><a href="#">+ 我在大學學生會的工作及一些社團活動</a></ul>
+            <ul class="nsub">
+            <p>- 大學二年級我在所在學院的學生會宣傳部門“北極光工作室”擔任學生部長一職，參與過學院的學生心理輔導網站建設、2006年度新生入學手冊的設計製作，參與策劃過第七屆江平獎學金的頒獎典禮，以及其他一些常規宣傳工作；</p>
+            <p>- 大學期間我加入的主要社團是中國政法大學青年志願者協會與學校的紅十字會，任學生幹事，參與過一些公益志願活動。</p>
+        </ul>
+    </div>
+    <div id="tab5"><button>Expand / Compact all</button>
+        <ul class="nitem"><a href="#">+ 我是否可以在香港從事工作？</a></ul>
+            <ul class="nsub">
+            <p>- 我持有香港身份證及居留簽證，根據香港入境處條例（<a href="http://www.immd.gov.hk/sc/faq/hk-visas.html" target="_blank" class="fixedTip exampleTip" title="點擊查閱香港入境事務處官方網站相關鏈接">參閱『問答5第4項』<b>?</b></a>）可以不受限制在港就業。我的家鄉在北京，我和妻子定居在香港。</p>
+        </ul>
+        <ul class="nitem"><a href="#">+ 我是否可以立即就職，薪酬要求？</a></ul>
+            <ul class="nsub">
+            <p>- 如果您感興趣，可以通過郵件與我聯繫，我尊重雇主及雇傭單位的薪酬福利制度。</p>
+        </ul>
+        <ul class="nitem"><a href="#">+ 我未來有哪些打算和規劃？</a></ul>
+            <ul class="nsub">
+            <p>- 未來我将在香港生活，打算尋找一份穩定的工作，能夠挑戰、鍛煉自己，提高自己的工作技能，希望能對我感興趣的前端設計方向有所幫助。</p>
+        </ul>
+        <ul class="nitem"><a href="#">+ 我爲什麽沒有從事與原本的法學專業相關的工作？</a></ul>
+            <ul class="nsub">
+            <p>- 畢業前後我曾在法院、檢察院、律師事務所做過短暫的實習工作，機械化的重複工作令我越來越覺得枯燥乏味，一個偶然的機會我進入傳媒行業，對我來說，代碼有著無窮的魅力，這是一份可以充分發揮自己的想像力與創造力的工作。</p>
+        </ul>
+        <ul class="nitem"><a href="#">+ 我对雇主有哪些期待？</a></ul>
+            <ul class="nsub">
+            <p>- 友好的工作環境，包括辦公設備，我認為對工作效率和成果也有著顯著的影響，這是我對雇用單位小小的期待。</p>
+        </ul>
+    </div>
+    <div id="tab6">
+        <ul class="nitem"><a href="#">+ 我的閱讀習慣</a></ul>
+            <ul class="nsub">
+            <p>- 訂閱RSS稿源是我每日接收新鮮資訊和保持知識更新的慣常方式，面對信息爆炸和碎片化的網絡環境，一種我認為簡單高效的閱讀和學習方式，在此我羅列了一份每天都在使用的 Google Reader 自08年至今的訂閱清單，除此之外，我保持著每天瀏覽本地報紙的習慣，近年來我也在智能手機的APP上進行零散時間的閱讀。</p>
+        </ul>
+        <ul class="nitem"><a href="#">+ 我感興趣的閱讀內容</a></ul>
+            <ul class="nsub">
+            <p>- 總體來說以對生活與工作有幫助為目標，互聯網及科技、前端開發與設計、移動互聯網及產品、實用工具軟件、瀏覽器擴展腳本等都是我感興趣的內容；此外我也常從GFW封鎖的渠道獲取客觀中立的新聞資訊，我還鍾愛心理學方面的書籍，喜歡美劇和電影。</p>
+        </ul>
+        <ul class="nitem"><a href="#">+ 我參與貢獻的產品項目</a></ul>
+        	<ul class="nsub">
+            <p>- 利用閒暇時間，我也于社群積極聯繫并參與一些海外開發者的優秀項目，包括Web程序、智能手機App程式、遊戲軟體、腳本擴展等，我為以下所感興趣的產品提供諸如中文化語系、前期測試及反饋的帮助：</p>
+            <p>- <a href="http://tt-rss.org/" target="_blank" class="fixedTip exampleTip" title="頗具知名度並且廣受歡迎的開源RSS線上閱讀產品，我為其提供簡體中文語系內容">Tiny Tiny RSS</a> <a href="https://play.google.com/store/apps/details?id=com.ageofmobile.reader" target="_blank" class="fixedTip exampleTip" title="一款優秀的智能手機閱讀APP，我為其提供前期測試、反饋與所有中文化語系內容">Reader+</a> <a href="http://bbs.3dmgame.com/thread-1627751-1-1.html" target="_blank" class="fixedTip exampleTip" title="由我策劃并全程參與協調的中文化遊戲項目，同時我獨立完成了內容翻譯與校對工作">Emergency 2013</a> <a href="https://play.google.com/store/apps/details?id=org.baole.fakelog" target="_blank" class="fixedTip exampleTip" title="一個很有創意的通訊偽造APP，我為其提供簡體中文語系內容">Fake Call & SMS</a> <a href="http://www.sismics.com/reader/" target="_blank" class="fixedTip exampleTip" title="一款優秀的多平臺開源RSS閱讀產品，我為其提供所有中文化語系內容">Sismics Reader</a>
+        </ul>
+        <ul class="nitem"><a href="#">+ 我發表的一些文章</a></ul>
+            <ul class="nsub">
+            <p>- 我很重視閱讀之后的知識管理，同時熱愛分享，我擁有一個自己架設的WordPress獨立博客：<a href="http://blog.wanghao.hk" target="_blank" class="fixedTip exampleTip" title="點擊以繼續訪問" style="border-bottom:1px dotted;">blog.wanghao.hk</a>，此外在社區、雜誌中也寫過許多文章分享自己的知識與心得，我隨機選擇了幾篇文章，如果您感興趣，歡迎隨時預覽：</p>
+            <p>- <a href="http://qing.weibo.com/1864781067/6f264d0b33000htf.html" target="_blank" class="fixedTip exampleTip" title="如何使用谷歌浏览器直接将谷歌官方安卓应用商店的APK安装文件下载到电脑上？">示例①</a> <a href="http://bbs.3dmgame.com/showtopic-1148381.html" target="_blank" class="fixedTip exampleTip" title="一個曾由我維護的項目，頗受歡迎至今已有超過44萬次瀏覽3萬多次回覆">示例②</a> <a href="http://blog.wanghao.hk/googlereader-replacement/" target="_blank" class="fixedTip exampleTip" title="替代无可替代的谷歌阅读器 Google Reader 的产品替代方案">示例③</a> <a href="http://bbs.huanqiu.com/thread-1743803-1-1.html" target="_blank" class="fixedTip exampleTip" title="一個曾由我發起的工作話題，短時間內獲得眾多迴響，一次成功的主題策劃">示例④</a> <a href="http://soft.cfan.com.cn/apps/201212/14/1355458567d97478.shtml" target="_blank" class="fixedTip exampleTip" title="一篇原本我在內刊的投稿，後在公開刊物發表的文章">示例⑤</a></p>
+        </ul>
+        <ul class="nitem"><a href="#">+ 我每日的閱讀清單</a></ul>
+            <ul class="nsub">
+            <p>一份來自 Google Reader 的訂閱清單（截圖更新時間為2013年3月）</p>
+            <img src="..img/content/home_design.jpg" />
+            <img src="..img/content/home_www.jpg" />
+            <img src="..img/content/home_gfw.jpg" />
+            <img src="..img/content/home_soft.jpg" />
+        </ul>
+    </div>
+</div>--><!--tabsbody end-->
+    </div><!--faq-->
+</div><!--faqbg-->
+<!--问答标签效果-->
+<script>
+$(document).ready(function() {
+    $("#tabsbody div").hide(); // Initially hide all content
+    $("#tabs li:first").attr("id","current"); // Activate first tab
+    $("#tabsbody div:first").fadeIn(); // Show first tab content
+    $('#tabs a').hover(function(e) {
+		e.preventDefault();
+        if ($(this).closest("li").attr("id") == "current"){ //detection for current tab
+         return       
+        }
+        else{             
+        $("#tabsbody div").hide(); //Hide all content
+        $("#tabs li").attr("id",""); //Reset id's
+        $(this).parent().attr("id","current"); // Activate this
+        $('#' + $(this).attr('name')).fadeIn(); // Show content for current tab
+        }
+    });
+});
+</script>
+<!--问答内容效果-->
+<script>
+		$(document).ready(function() {
+			$('.nsub').hide();
+			$('.nitem a').live('click', function(e){
+				e.preventDefault();
+				$(this).parent().next('.nsub').slideToggle('slow');
+				if($(this).parent().next('.nsub').is(':hidden')) {
+                    $(this).addClass("");
+                } else {
+                    $(this).removeClass("");
+                }
+			});
+		});
+</script>
+<!--按钮效果-->
+<script>
+		$(document).ready(function() {
+			$('button').live('click', function(e){
+				e.preventDefault();
+				$(this).nextAll('.nsub').slideToggle('slow');
+			});
+		});
+</script>
+<!--提示效果-->
+<script type="text/javascript">
+			$(function(){ 
+				$('a.normalTip').aToolTip();
+				$('a.fixedTip').aToolTip({
+		    		fixed: true
+				});	
+			}); 
+</script>
+<!--工作内容展示-->
+<div id="work">
+    <div id="workcontent"><h3>My Work</h3>
+        <div class="mosaic-block bar">
+			<a href="http://news.cntv.cn/special/qnlx/wusiqingnianjie/index.shtml" target="_blank" class="mosaic-overlay">
+				<div class="details">
+					<h4>原創專題設計：五四新青年</h4>
+					<p>上線於2012.05.04，在cctv.com首頁頭條區推薦</p>
+				</div>
+			</a>
+			<div class="mosaic-backdrop"><img src="../img/content/001.jpg"/></div>
+		</div>
+        <div class="mosaic-block bar">
+			<a href="http://news.cntv.cn/special/people/weishengwu/02/index.shtml#ban" target="_blank" class="mosaic-overlay">
+				<div class="details">
+					<h4>原創專題策劃</h4>
+					<p>系列攝影報導，對草根群眾演員的專訪</p>
+				</div>
+			</a>
+			<div class="mosaic-backdrop"><img src="../img/content/002.jpg"/></div>
+		</div>
+        <div class="mosaic-block bar">
+			<a href="http://news.cntv.cn/special/people/61/index.shtml#ban" target="_blank" class="mosaic-overlay">
+				<div class="details">
+					<h4>六一兒童節專題</h4>
+					<p>上線於2012.06.01,取材于記者同事的採訪素材</p>
+				</div>
+			</a>
+			<div class="mosaic-backdrop"><img src="../img/content/004.jpg"/></div>
+		</div>
+        <div class="mosaic-block cover2">
+			<a class="mosaic-overlay"><img src="../img/content/019.jpg"/></a>
+			<a href="http://news.cntv.cn/special/fuxingwanbao/20/index.shtml" target="_blank" class="mosaic-backdrop">
+				<div class="details">
+					<h4>2012復興晚報系列專題</h4>
+					<p>基於復興論壇及微博每日新鮮時事設計的專題版面</p>
+				</div>
+			</a>
+		</div>
+        <div class="mosaic-block cover2">
+			<a class="mosaic-overlay"><img src="../img/content/018.jpg"/></a>
+			<a href="http://wpirate.coffeecup.com/yxk/" target="_blank" class="mosaic-backdrop">
+				<div class="details">
+					<h4>2013系統常用運行庫專題V2</h4>
+					<p>利用閒暇時間義務設計製作的專題，包括内容題材</p>
+				</div>
+			</a>
+		</div>
+        <div class="mosaic-block cover2">
+			<a class="mosaic-overlay"><img src="../img/content/015.jpg"/></a>
+			<a href="http://sdrv.ms/MBYMUp" target="_blank" class="mosaic-backdrop">
+				<div class="details">
+					<h4>大學時期製作的PPT課堂演示文檔</h4>
+					<p>2008國際私法研討課的小組研討成果</p>
+				</div>
+			</a>
+		</div>
+        <div class="mosaic-block bar3">
+			<a href="http://news.cntv.cn/special/zghr200/shouye/index.shtml" target="_blank" class="mosaic-overlay">
+				<div class="details">
+					<h4>原創設計的多期《中國好人》特別專題</h4>
+					<p>2012年cctv.com重點欄目，多期登陸于全網首頁</p>
+				</div>
+			</a>
+			<a class="mosaic-backdrop"><img src="../img/content/006.jpg"/></a>
+		</div>
+		<div class="mosaic-block bar3">
+			<a href="http://news.cntv.cn/special/people/2012wd/index.shtml" target="_blank" class="mosaic-overlay">
+				<div class="details">
+					<h4>原創設計的情人節專題</h4>
+					<p>2012年情人節推出的互動型專題，包括內容題材</p>
+				</div>
+			</a>
+			<a class="mosaic-backdrop"><img src="../img/content/003.jpg"/></a>
+		</div>
+        <div class="mosaic-block bar3">
+			<a href="http://goo.gl/BLGhL" target="_blank" class="mosaic-overlay">
+				<div class="details">
+					<h4>我的署名文章發表在國內知名IT雜誌</h4>
+					<p>此文章刊登在2012年第24期的56至57頁</p>
+				</div>
+			</a>
+			<a class="mosaic-backdrop"><img src="../img/content/005.jpg"/></a>
+		</div><span class="more"><a href="work.html" target="_self">View More</a></span>
+    </div><!--workcontent-->
+</div><!--work-->
+<!--图块效果-->
+<script type="text/javascript">  			
+			jQuery(function($){				
+				$('.circle').mosaic({
+					opacity		:	0.8			//Opacity for overlay (0-1)
+				});
+				$('.fade').mosaic();
+				$('.bar').mosaic({
+					animation	:	'slide'		//fade or slide
+				});				
+				$('.bar2').mosaic({
+					animation	:	'slide'		//fade or slide
+				});				
+				$('.bar3').mosaic({
+					animation	:	'slide',	//fade or slide
+					anchor_y	:	'top'		//Vertical anchor position
+				});				
+				$('.cover2').mosaic({
+					animation	:	'slide',	//fade or slide
+					anchor_y	:	'top',		//Vertical anchor position
+					hover_y		:	'80px'		//Vertical position on hover
+				});				
+		    });		    
+</script>
+<!--更多按钮效果-->
+<script>$(document).ready(function(){
+	        $(".more a").hover(function(){
+		        $(this).stop().animate({backgroundColor:"#BB5E3E"},300)}
+		        ,function(){
+		        $(this).stop().animate({backgroundColor:"#f25c27"},200)
+	        })
+	    })
+</script>
+<!--联系方式及链接-->
+<div id="contact">
+    <div id="contactcontent">
+        <div id="left">
+            <p class="contacttitle">About Me</p>
+            <div class="mosaic-block fade" style="height:138px;width:220px;margin:0 15px 0 0;"><a class="mosaic-overlay"><div class="details" style="text-align:center;margin-top:105px;"><h4 style="color:#eee;font-size:10px;">sunshine, beach, sea</h4><p style="color:#eee;font-size:10px;">I love it !<p></div></a><div class="mosaic-backdrop"><img src="../img/contact.jpg" /></div></div>
+            <p class="contactcontent">Ryan H. Wang</p>
+            <p class="contactcontent">Tel：<br>Hong Kong: (+852) 64364753<br>China: (+86) 14715644753</p>
+            <p class="contactcontent">Email：<br>Ryan@wanghao.hk</p>
+        </div><!--left-->
+        <div id="right">
+            <p class="contacttitle">Useful Links</p>
+            <a href="#nav" target="_self" class="smooth">♨ Home</a>
+            <a href="work.html" target="_self">♨ Work</a>
+            <a href="resume.html" target="_self">♨ Resume</a>
+            <a href="http://blog.wanghao.hk/" target="_blank">♨ Blog</a>
+            <a href="mailto:ryan@wanghao.hk">♨ Email</a>
+            <a href="../index.html" target="_self">♨ Intro</a>
+            <a href="../contact.html" target="_self">♨ Contact</a>
+            <a href="../home.html" target="_self">☞ Chinese</a>
+            <a target="_self">☞ English</a>
+         </div><!--right-->
+            <div class="media">
+                <a href="http://weibo.com/wpiratez" target="_blank" class="weibo"></a>
+                <a href="http://qing.weibo.com/wpiratez" target="_blank" class="qing"></a>
+                <a href="http://pirates1011.blogbus.com/" target="_blank" class="blogbus"></a>
+                <a href="http://twitter.com/wanghao1011" target="_blank" class="twitter"></a>
+                <a href="http://wpiratez.lofter.com/" target="_blank" class="lofter"></a>
+                <a href="http://about.me/wanghao1011" target="_blank" class="aboutme"></a>
+            </div>
+    </div><!--contactcontent-->
+</div><!--contact-->
+<!--有用链接效果-->
+<script>$(document).ready(function(){
+	        $("#right a, .accordion div a").hover(function(){
+		        $(this).stop().animate({color:"#fff"},300)}
+		        ,function(){
+		        $(this).stop().animate({color:"#f25c27"},200)
+	        })
+	    })
+</script>
+<!--社交网络效果-->
+<script>$(document).ready(function(){
+            $("a.weibo,a.qing,a.blogbus,a.twitter,a.lofter,a.aboutme").fadeTo(1,0.8).hover(function(){
+                $(this).stop().fadeTo(500,1)}
+				,function(){
+                $(this).stop().fadeTo(500,0.8)
+            })
+        })
+</script>
+<!--页脚-->
+<div id="footer">
+    <div id="footercontent">© 2013 | Designed by Ryan | Licensed under Creative Commons BY-SA
+    </div><!--footercontent-->
+</div><!--footer-->
+<!--顶部按钮-->
+<div id="topbutton"><a href="#" class="topbutton"></a></div>
+</body>
+<!--通知栏-->
+<script type="text/javascript" src="js/jbar.js"></script>
+<script type="text/javascript">
+	$(function () {
+	    $.jBar({
+	    	startClosed: true,
+	        type: 'fixed', // Fixed/Static
+	        delay: '500', // In milliseconds
+	        backgroundColor: '#f25c27', // Background Color
+	        borderColor: '#f25c27', // Background Color
+	        buttonTextColor: '#FFF', // Button Text
+	        buttonColor: '#2d2d2d', // Button Color
+	        buttonColorHover: '#DB5903', // Button Color Hover
+	        calltoAction: 'Not your language?', // Call to action text
+	        buttonText: 'Chinese', // Button Text
+	        buttonLink: '../home.html' // Hyperlink from button
+	    });
+	});
+</script>
+</html>

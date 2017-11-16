@@ -1,0 +1,78 @@
+/*全局*/
+body {margin:0; padding:0;}
+/*主文字*/
+.main {
+font-family:'Venera3'; font-size:36px; text-align:center; line-height:64px; color:#ccc;}
+/*主文字背景*/
+#oscarmike {width:960px; height:130px; margin:0 auto; text-align:center;}
+/*色块文字背景*/
+.alpha {
+	background-color:#56BBD7;
+	color:#333333;
+	cursor:pointer;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+/*色块文字背景*/
+.bravo {
+	background-color:#E9BE3F;
+	color:#333333;
+	cursor:pointer;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+/*图块*/
+#pic {margin:0 auto; width:960px; display:none; overflow:hidden;}
+/*页底文字*/
+#footers {width:960px; margin:0 auto; margin-top:50px;}
+.last {font-family:'barkentina1','Microsoft YaHei'; font-size:16px; letter-spacing:0.1em; color:#ddd; text-align:center;}
+/* General Mosaic Styles */
+.mosaic-block {
+	width:400px !important;
+	margin:37px !important;
+	border:1px solid #ccc !important;
+}
+.details{margin:15px 20px !important;}
+.details h4{letter-spacing:0.15em !important;}
+.details p{margin-top:-5px !important;}
+/* Custom Animation Styles */
+.bar .mosaic-overlay {
+	bottom:-100px !important;
+	height:100px !important;
+}
+.bar3 .mosaic-overlay {
+	top:-100px !important;
+	height:100px !important;
+}
+/*主文字背景透明度*/
+.alpha30 {background:rgb(0, 0, 0); background:rgba(0, 0, 0, 0.3); background:transparent\9; zoom:1; -webkit-border-radius:15px; -moz-border-radius:15px; border-radius:15px;}
+/*queryLoader*/
+.QOverlay {background-color: #000000; z-index: 9999;}
+.QLoader {background-color: #CCCCCC; height: 1px;}
+.QAmt {
+	color:#333333;
+	font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;
+	font-size:40px;
+	font-weight:bold;
+	line-height:50px;
+	height:50px;
+	width:100px;
+	margin:-60px 0 0 -50px;
+}
+
+/* Update 2016 */
+
+.details h4{
+	font: 300 16px 'barkentina1','Microsoft YaHei';
+    line-height: 2px;
+    color: #fff;
+}
+.details p{
+	color:#aaa;
+	font: 300 14px 'barkentina1','Microsoft YaHei';
+    line-height: 8px;
+    letter-spacing: 0.1em;
+}
